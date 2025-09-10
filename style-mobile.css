@@ -1,0 +1,82 @@
+/* ======================== */
+/* ESTILOS PARA MOBILE (BASE) */
+/* ======================== */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('cachoeiramulherMobileFinal.png'); /* Usar a imagem mobile como base */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  
+  .cabecalho, .container1, .container2, footer {
+    padding: 10px; /* Adiciona padding em todos os containers para telas pequenas */
+  }
+  
+  .cabecalho {
+    background: rgb(228, 244, 252);
+    height: 6em; /* Altura menor para mobile */
+    box-shadow: 2px 5px 5px #88c0acd2;
+    border-radius: 4px;
+  }
+  
+  #logo {
+    width: 8em;
+    height: 6em;
+    margin-left: 0;
+  }
+  
+  /* Os textos e botões se alinham naturalmente em colunas no mobile */
+  .texto1 {
+    font-size: 16px;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  #entreemcontato {
+    width: 100%;
+    margin: 2em 0;
+    /* Mantenha o estilo do botão, mas ajuste a margem */
+  }
+  
+  /* Remover float e usar display flex para centralizar imagens ou mantê-las em blocos */
+  #cachoeira, #resultados, #man {
+    width: 100%;
+    height: auto; /* Altura automática para manter proporção */
+    background-position: center;
+    background-size: contain;
+    margin: 2em 0;
+    float: none;
+  }
+  
+  #familia, #moça {
+    width: 100%;
+    height: 35em;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Faz com que os itens fiquem em colunas */
+  }
+  
+  .icons {
+    width: 2em;
+    height: 2em;
+    margin-top: 1em; /* Ajusta a margem para mobile */
+  }

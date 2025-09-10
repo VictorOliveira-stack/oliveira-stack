@@ -1,0 +1,22 @@
+Cor Principal: Verde-Água
+
+Código: #B5EAD7
+
+Cor Secundária: Branco
+
+Código: #FFFFFF
+
+Cor de Destaque (CTA): Laranja
+
+Código: #FFD580 (Laranja-claro e amigável)
+
+Exemplo de Aplicação no Site
+Fundo da Página: #FFFFFF (Branco)
+
+Fundo de Seções ou Blocos: #B5EAD7 (Verde-água)
+
+Texto Principal: Preto ou um cinza escuro para manter a legibilidade.
+
+Botões de Ação (CTA): #FFD580 (Laranja)
+
+Ícones e Elementos Decorativos: #B5EAD7 ou um tom mais escuro de verde para contraste.
