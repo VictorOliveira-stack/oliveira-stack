@@ -84,6 +84,10 @@ body::before {
     margin-top: -24em;
 }
 
+#cachu{
+    display: none;
+}
+
 #entreemcontato {
     font-size: 15px;
     cursor: pointer;
@@ -149,6 +153,13 @@ body::before {
     margin-left: 5em;
 }
 
+#result{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+
 #moça{
     background-image: url('moçafeliz.png');
     width: 100%;
@@ -188,7 +199,12 @@ body::before {
     margin-left: 5em;
     margin-top: 12em;
 }    
-    
+
+#canvasman{
+    display: none;
+    width: 100%;
+    height: auto;
+}
 
 .texto1{
     font-size: 20px;
@@ -289,8 +305,12 @@ footer{
         
     }
 
+    #botaoentreemcontato{
+        display: none;
+    }
+
     
-    #entreemcontato {
+     /*#entreemcontato {
         font-size: 15px;
         cursor: pointer;
         width: 11em;
@@ -311,7 +331,7 @@ footer{
         margin-top: 8em;
         
       }
-      @media (min-width: 320px) and (max-width: 375px){
+     @media (min-width: 320px) and (max-width: 375px){
         #entreemcontato {
             font-size: 15px;
             cursor: pointer;
@@ -357,8 +377,36 @@ footer{
                 margin-top: 8em;
                 
               }
+            }*/
+            /*#cachu{
+                background-image: url('canvacachoeiramobile.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 190vh;
+                width: 100%;
+            }*/
+            #cachu{
+            
+                height: auto;
+                width: 100%;
             }
-
+        
+            #text1{
+                display: none;
+                /*margin-left: 2em;
+                margin-top: 2em;*/
+              }
+              
+            
+        
+              @media (min-width: 376px) and (max-width: 504px){
+                #text1{
+                    margin-left: 4.5em;
+                    margin-top: 2em;
+                    /*background: #88c0ac4d;*/
+                  }
+              }
+        
        
 
 
@@ -401,7 +449,7 @@ footer{
         background-size: cover;
         display: flex;
         border-radius: 4px;
-        margin-top: 20em;
+        margin-top: 10em;
     }
 
     #texto4{
@@ -440,16 +488,31 @@ footer{
     }
 
     .container1{
+        display: none;
+        /*width: 100%;
+        height: auto;
+        background: rgba(181, 234, 215, 0.288);
+        min-height: 72vh;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;*/
+        
+    }
+
+    .container111{
         width: 100%;
         height: auto;
         background: rgba(181, 234, 215, 0.288);
         min-height: 72vh;
         border-radius: 4px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
+        /*para caso precise usar em vez de container 1, mas faz a mesma funçao de container1*/
         
     }
+
     .container2{
+        display: none;
         width: 100%;
         height: auto;
         background: rgba(181, 234, 215, 0.288);
@@ -457,7 +520,17 @@ footer{
         border-radius: 4px;
     }
 
-    #cachoeira{
+    .container222{
+        width: 100%;
+        height: auto;
+        background: rgba(181, 234, 215, 0.288);
+        min-height: 92vh;
+        border-radius: 4px;
+    }
+
+    
+
+    /*#cachoeira{
         background-image: url('cachoeirafinal.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -467,7 +540,7 @@ footer{
         margin-right: 10em;
         border-radius: 10px;
         margin-top: 4em;
-    }
+    }*/
 
     /*.containercachu{
         width: 100%;
@@ -483,21 +556,7 @@ footer{
         background-position: center center;
         
     }*/
-    #text1{
-        margin-left: 2em;
-        margin-top: 2em;
-      }
-      
     
-
-      @media (min-width: 376px) and (max-width: 504px){
-        #text1{
-            margin-left: 4.5em;
-            margin-top: 2em;
-            /*background: #88c0ac4d;*/
-          }
-      }
-
     /*.containermenina{
         width: 100%;
         height: auto;
@@ -512,6 +571,7 @@ footer{
         background-position: center center;
     }*/
     #resultados{
+        display: none;
         background-image: url('meninaA.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -523,15 +583,22 @@ footer{
     
     }
     #texto3{
+        display: none;
         color: #11998e;
         /*color: rgb(255, 115, 0);*/
         font-size: 20px;
         width: 12em;
         margin-left: 1.5em;
     }
+
+    #result{
+        width: 100%;
+        height: auto;
+    }
     
     
     #man{
+        display: none;
         background-image: url('mancruzado.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -539,6 +606,11 @@ footer{
         height: 14em;    
         border-radius: 4px;
         margin-top: 2em;
+    }
+
+    #canvasman{
+        width: 100%;
+        height: auto;
     }
 
     .psize1{
@@ -572,6 +644,7 @@ footer{
         gap: 3em;
     }
 
+   
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -623,7 +696,7 @@ footer{
         width: 100%;
         height: auto;
         background: rgba(181, 234, 215, 0.288);
-        min-height: 72vh;
+        min-height: 92vh;
         border-radius: 4px;
         
        
@@ -636,6 +709,8 @@ footer{
         min-height: 92vh;
         border-radius: 4px;
     }
+
+    
     
     #cachoeira{
         background-image: url('cachoeiramulherMobileFinal.png');
@@ -801,29 +876,33 @@ footer{
         flex-direction: column;
     }
     
-    footer{
-        display: flex;
-        margin-top: 20em;
-        height: 8em;
-        background: rgba(75, 85, 81, 0.288);
-        gap: 5em;
-        border-radius: 4px;
-    }
+
     
-    #logo2{
-        background-image: url('oliveira-stack.png.png');
-        background-size: cover;
-        width: 8em;
-        height: 8em;
-        margin-left: 1em;
+    @media (min-width: 768px) and (max-width: 1024px){
+        footer{
+            display: flex;
+            margin-top: 20em;
+            height: 8em;
+            background: rgba(75, 85, 81, 0.288);
+            gap: 0.5em;
+            border-radius: 4px;
+        }
         
+        #logo2{
+            background-image: url('oliveira-stack.png.png');
+            background-size: cover;
+            width: 8em;
+            height: 8em;
+            margin-left: 1em;
+            
+        }
+        
+        .icons{
+            width: 2em;
+            height: 2em;
+            margin-top: 4em;
+            margin-left: 8em;
+        }
     }
-    
-    .icons{
-        width: 2em;
-        height: 2em;
-        margin-top: 4em;
-        margin-left: 10em;
-    }
-    
+
 }
