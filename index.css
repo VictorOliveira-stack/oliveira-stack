@@ -54,6 +54,20 @@ body::before {
     
 }
 
+.botoescabeçalho{
+    display: flex;
+    text-decoration: none;
+    margin-top: 2.2em;
+    margin-left: 15.5em;
+    gap: 6em;
+}
+.textobotoescabeçalho{
+    font-size: 20px;
+    margin-left: 0.5em;
+    color: #11998e;
+   
+}
+
 .container1{
     width: 100%;
     height: 10em;
@@ -297,12 +311,26 @@ footer{
         
     }
     #logo{
-        background-image: url('oliveira-stack.png.png');
+        background-image: url('oliveira-baixoOliveira-stack.png');
         background-size: cover;
         background-repeat: no-repeat;
-        width: 10em;
+        width: 8em;
         height: 8em;
-        
+        margin-left: -1em;
+    }
+
+    .botoescabeçalho{
+        text-decoration: none;
+        margin-top: -3.3em;
+        margin-left:  7em;
+    }
+    .textobotoescabeçalho{
+        font-size: 15px;
+        width: 13em;
+        overflow:hidden;
+        margin-left: 0.5em;
+        color: #11998e;
+       
     }
 
     #botaoentreemcontato{
@@ -690,6 +718,20 @@ footer{
         margin-top: -1em;
         margin-left: 1em;
         
+    }
+
+    .botoescabeçalho{
+        text-decoration: none;
+        margin-top: 2.2em;
+        margin-left: 4em;
+    
+    }
+
+    .textobotoescabeçalho{
+        font-size: 20px;
+        margin-left: 0.5em;
+        color: #11998e;
+       
     }
     
     .container1{
