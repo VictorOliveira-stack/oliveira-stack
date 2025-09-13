@@ -324,6 +324,25 @@ footer{
         margin-top: -3.3em;
         margin-left:  7em;
     }
+    @media (min-width: 375px) and (max-width: 767px){
+
+        .botoescabeçalho{
+            display: flex;
+            text-decoration: none;
+            margin-top: -1.6em;
+            margin-left:  9em;
+        }
+    }
+
+    @media (min-width: 503px) and (max-width: 767px){
+
+        .botoescabeçalho{
+            display: flex;
+            text-decoration: none;
+            margin-top: -1.8em;
+            margin-left:  13em;
+        }
+    }
     .textobotoescabeçalho{
         font-size: 15px;
         width: 13em;
@@ -336,6 +355,7 @@ footer{
     #botaoentreemcontato{
         display: none;
     }
+
 
     
      /*#entreemcontato {
