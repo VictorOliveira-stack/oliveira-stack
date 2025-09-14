@@ -447,6 +447,23 @@ body {
             height: 20em;
         }
      }
+     #fotovictor{
+        margin-left: 15%;
+        margin-top: 8em;
+    }
+
+    #victor{
+        width: 10em;
+        height: 15em;
+        border-radius: 1em;
+    }
+    .texto111{
+        margin-left: 0;
+        font-size: 20px;
+        width: 74%;
+        overflow:hidden;
+        color: #11998e;
+    }
 
      footer{
         display: flex;
