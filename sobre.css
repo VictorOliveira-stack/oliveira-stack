@@ -92,8 +92,21 @@ body {
         overflow:hidden;
         color: #11998e;
     }
+    .texto111{
+        margin-left: 0;
+        font-size: 20px;
+        width: 74%;
+        overflow:hidden;
+        color: #11998e;
+    }
     .titulo1{
         margin-left: 15%;
+        width: 10em;
+        overflow:hidden;
+        color: #11998e;
+    }
+    .titulo2{
+        margin-left: 0;
         width: 10em;
         overflow:hidden;
         color: #11998e;
@@ -103,6 +116,17 @@ body {
         display: flex;
         gap: 5em;
         margin-left: 15%;
+    }
+
+    #fotovictor{
+        margin-left: 15%;
+        margin-top: 8em;
+    }
+
+    #victor{
+        width: 10em;
+        height: 15em;
+        border-radius: 1em;
     }
 
     iframe{
@@ -136,6 +160,7 @@ body {
         margin-top: 4em;
         margin-left: 10em;
     }
+
     
 
 }
