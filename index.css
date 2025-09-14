@@ -475,11 +475,26 @@ footer{
             min-height: 40em;
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             display: flex;
             border-radius: 4px;
             
         }
     }
+    @media (min-width: 505px) and (max-width: 767px){
+        #familia{
+            background-image: url('familiafelizMobile2.png');
+            width: 100%;
+            min-height: 40em;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            border-radius: 4px;
+            
+        }
+    }
+
 
     #texto2{
         color: orange;
