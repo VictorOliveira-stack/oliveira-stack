@@ -1,0 +1,453 @@
+body {
+    margin: 0;
+    min-height: 100vh; 
+    position: relative; /* Importante para posicionar o ::before */
+    z-index: 1; /* Garante que o conteúdo do body fique acima do ::before */
+    font-family: "Quicksand", sans-serif;
+}
+
+@media (min-width: 768px) {
+
+    body::before {
+        content: ''; /* Essencial para que pseudo-elementos funcionem */
+        position: fixed; /* Fixa o overlay na viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('cachoeirafinal.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.6; /* Ajuste este valor entre 0 (totalmente transparente) e 1 (totalmente opaco) */
+        z-index: -1; /* Coloca o overlay atrás do conteúdo do body */
+    }
+    
+    .container-principal {
+        max-width: 1440px; /* ou 1200px, 1440px, 1600px, etc. */
+        margin: 0 auto;
+        padding: 0 20px; 
+        
+      }
+    
+    .cabecalho{
+       
+        background: rgb(228, 244, 252);
+        height: 8em;
+        box-shadow: 2px 5px 5px #88c0acd2 ;
+        /*box-shadow: 2px 5px 5px  rgb(228, 244, 252);*/
+        /*border-radius: 4px;*/
+        display: flex;
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 4em;
+        
+    }
+    #logo{
+        background-image: url('oliveira-stack.png.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10em;
+        height: 8em;
+        margin-top: -1em;
+        margin-left: 1em;
+        
+    }
+    
+    .botoescabeçalho{
+        display: flex;
+        text-decoration: none;
+        margin-top: 2.2em;
+        margin-left: 15.5em;
+        gap: 6em;
+    }
+    .textobotoescabeçalho{
+        font-size: 20px;
+        margin-left: 0.5em;
+        color: #11998e;
+       
+    }
+
+    .article1{
+       padding-top: 2em;
+       padding-bottom: 2em;
+        width: 90%;
+        margin-top: 10em;
+        margin-left: 3em;
+        /*background-color: rgba(0, 0, 0, 0.534);*/
+        background:  rgba(181, 234, 215, 0.288);
+        border-radius: 1em;
+
+    }
+
+    .texto1{
+        font-size: 20px;
+        width: 15em;
+        overflow:hidden;
+        color: #11998e;
+    }
+    .texto11{
+        margin-left: 15%;
+        font-size: 20px;
+        width: 74%;
+        overflow:hidden;
+        color: #11998e;
+    }
+    .titulo1{
+        margin-left: 15%;
+        width: 10em;
+        overflow:hidden;
+        color: #11998e;
+    }
+
+    #textoevideo{
+        display: flex;
+        gap: 5em;
+        margin-left: 15%;
+    }
+
+    iframe{
+        margin-top: 3em;
+        border-radius: 1em;
+        width: 35em;
+        height: 20em;
+    }
+
+    footer{
+        display: flex;
+        margin-top: 20em;
+        height: 8em;
+        background: rgba(75, 85, 81, 0.288);
+        gap: 5em;
+        border-radius: 4px;
+    }
+    
+    #logo2{
+        background-image: url('oliveira-stack.png.png');
+        background-size: cover;
+        width: 8em;
+        height: 8em;
+        margin-left: 1em;
+        
+    }
+    
+    .icons{
+        width: 2em;
+        height: 2em;
+        margin-top: 4em;
+        margin-left: 10em;
+    }
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    body::before {
+        content: ''; /* Essencial para que pseudo-elementos funcionem */
+        position: fixed; /* Fixa o overlay na viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('cachoeirafinal.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.6; /* Ajuste este valor entre 0 (totalmente transparente) e 1 (totalmente opaco) */
+        z-index: -1; /* Coloca o overlay atrás do conteúdo do body */
+    }
+    
+    .container-principal {
+        max-width: 1440px; /* ou 1200px, 1440px, 1600px, etc. */
+        margin: 0 auto;
+        padding: 0 20px; 
+        
+      }
+    
+    .cabecalho{
+       
+        background: rgb(228, 244, 252);
+        height: 8em;
+        box-shadow: 2px 5px 5px #88c0acd2 ;
+        /*box-shadow: 2px 5px 5px  rgb(228, 244, 252);*/
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 4em;
+        display: flex;
+        
+    }
+    #logo{
+        background-image: url('oliveira-stack.png.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10em;
+        height: 8em;
+        margin-top: -1em;
+        margin-left: 1em;
+        
+    }
+
+    .botoescabeçalho{
+        text-decoration: none;
+        margin-top: 2.2em;
+        margin-left: 4em;
+    
+    }
+
+    .textobotoescabeçalho{
+        font-size: 20px;
+        margin-left: 0.5em;
+        color: #11998e;
+       
+    }
+
+    .article1{
+        padding-top: 2em;
+        padding-bottom: 2em;
+         width: 90%;
+         margin-top: 10em;
+         margin-left: 3em;
+         /*background-color: rgba(0, 0, 0, 0.534);*/
+         background:  rgba(181, 234, 215, 0.288);
+         border-radius: 1em;
+         
+     }
+ 
+     .texto1{
+         font-size: 20px;
+         width: 74%;
+         overflow:hidden;
+         color: #11998e;
+     }
+     .texto11{
+         margin-left: 15%;
+         font-size: 20px;
+         width: 65%;
+         overflow:hidden;
+         color: #11998e;
+         
+     }
+     .titulo1{
+         margin-left: 15%;
+         width: 74%;
+         overflow:hidden;
+         color: #11998e;
+     }
+ 
+     #textoevideo{
+         display: flex;
+         flex-direction: column;
+         gap: 5em;
+         margin-left: 15%;
+     }
+ 
+     iframe{
+         margin-top: 3em;
+         border-radius: 1em;
+         width: 35em;
+         height: 20em;
+     }
+     @media (min-width: 768px) and (max-width: 900px){
+        iframe{
+            margin-top: 3em;
+            margin-left: -3em;
+            border-radius: 1em;
+            width: 35em;
+            height: 20em;
+        }
+     }
+
+     @media (min-width: 768px) and (max-width: 1024px){
+        footer{
+            display: flex;
+            margin-top: 20em;
+            height: 8em;
+            background: rgba(75, 85, 81, 0.288);
+            gap: 0.5em;
+            border-radius: 4px;
+        }
+        
+        #logo2{
+            background-image: url('oliveira-stack.png.png');
+            background-size: cover;
+            width: 8em;
+            height: 8em;
+            margin-left: 1em;
+            
+        }
+        
+        .icons{
+            width: 2em;
+            height: 2em;
+            margin-top: 4em;
+            margin-left: 8em;
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    body {
+        margin: 0;
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+        font-family: "Quicksand", sans-serif;
+      }
+    body::before {
+        content: ''; /* Essencial para que pseudo-elementos funcionem */
+        position: fixed; /* Fixa o overlay na viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('mulhercachoeiramobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 0.6; /* Ajuste este valor entre 0 (totalmente transparente) e 1 (totalmente opaco) */
+        z-index: -1; /* Coloca o overlay atrás do conteúdo do body */
+    }
+    .container-principal {
+        /*max-width: 767px;*//* ou 1200px, 1440px, 1600px, etc. */
+        width: 100%;
+        margin: 0 auto;
+        /*padding: ;*/
+        
+      }
+
+      .cabecalho{
+        margin: 0;
+        background: rgb(228, 244, 252);
+        width: 100%;
+        height: 8em;
+        box-shadow: 2px 5px 5px #88c0acd2 ;
+        /*box-shadow: 2px 5px 5px  rgb(228, 244, 252);*/
+        border-radius: 4px;
+        
+    }
+    #logo{
+        background-image: url('oliveira-baixoOliveira-stack.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 8em;
+        height: 8em;
+        margin-left: -1em;
+    }
+
+    .botoescabeçalho{
+        text-decoration: none;
+        margin-top: -3.3em;
+        margin-left:  7em;
+    }
+    @media (min-width: 375px) and (max-width: 767px){
+
+        .botoescabeçalho{
+            display: flex;
+            text-decoration: none;
+            margin-top: -1.6em;
+            margin-left:  9em;
+        }
+    }
+
+    @media (min-width: 503px) and (max-width: 767px){
+
+        .botoescabeçalho{
+            display: flex;
+            text-decoration: none;
+            margin-top: -1.8em;
+            margin-left:  13em;
+        }
+    }
+    .textobotoescabeçalho{
+        font-size: 15px;
+        width: 13em;
+        overflow:hidden;
+        margin-left: 0.5em;
+        color: #11998e;
+       
+    }
+
+    .article1{
+        padding-top: 2em;
+        padding-bottom: 2em;
+         width: 100%;
+         margin-top: 10em;
+         margin-left: 0;
+         /*background-color: rgba(0, 0, 0, 0.534);*/
+         background:  rgba(181, 234, 215, 0.288);
+         border-radius: 1em;
+         
+     }
+ 
+     .texto1{
+         font-size: 20px;
+         width: 74%;
+         overflow:hidden;
+         color: #11998e;
+     }
+     .texto11{
+         margin-left: 15%;
+         font-size: 20px;
+         width: 65%;
+         overflow:hidden;
+         color: #11998e;
+         
+     }
+     .titulo1{
+         margin-left: 15%;
+         width: 74%;
+         overflow:hidden;
+         color: #11998e;
+     }
+ 
+     #textoevideo{
+         display: flex;
+         flex-direction: column;
+         gap: 5em;
+         margin-left: 15%;
+     }
+ 
+     iframe{
+        margin-left: -2em;
+         margin-top: 3em;
+         border-radius: 1em;
+         width: 100%;
+         height: 15em;
+     }
+     @media (min-width: 768px) and (max-width: 900px){
+        iframe{
+            margin-top: 3em;
+            margin-left: -3em;
+            border-radius: 1em;
+            width: 35em;
+            height: 20em;
+        }
+     }
+
+     footer{
+        display: flex;
+       
+        margin-top: 20em;
+       
+        height: auto;
+        background: rgba(75, 85, 81, 0.288);
+        gap: 1em;
+        border-radius: 4px;
+    }
+    
+    #logo2{
+        background-image: url('oliveira-stack.png.png');
+        background-size: cover;
+        width: 8em;
+        height: 6em;
+        margin-top: -2em;
+        
+    }
+    
+    .icons{
+        width: 2em;
+        height: 2em;
+        margin-top: 2em;
+        gap: 3em;
+    }
+
+}
