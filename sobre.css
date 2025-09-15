@@ -464,6 +464,12 @@ body {
         overflow:hidden;
         color: #11998e;
     }
+    .titulo2{
+        margin-left: 0;
+        width: 10em;
+        overflow:hidden;
+        color: #11998e;
+    }
 
      footer{
         display: flex;
