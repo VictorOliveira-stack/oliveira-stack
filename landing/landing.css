@@ -1,5 +1,31 @@
+body {
+    margin: 0;
+    min-height: 100vh; 
+    position: relative; /* Importante para posicionar o ::before */
+    z-index: 1; /* Garante que o conteúdo do body fique acima do ::before */
+    font-family: "Quicksand", sans-serif;
+}
+
+@media (min-width: 768px) {
+
+    .container-principal {
+        max-width: 1440px; /* ou 1200px, 1440px, 1600px, etc. */
+        margin: 0 auto;
+        padding: 0 20px; 
+        
+      }
+
 #cabeçalho{
     display: flex;
+    background: rgb(228, 244, 252);
+        height: 8em;
+        box-shadow: 2px 5px 5px #88c0acd2 ;
+        /*box-shadow: 2px 5px 5px  rgb(228, 244, 252);*/
+        /*border-radius: 4px;*/
+       
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 4em;
+        
 }
 #oliveira{
     width: 13em;
@@ -7,8 +33,48 @@
     margin-top: -2em;
 }
 #contato1{
-    margin-top: 4.5em;
+    margin-top: 3.4em;
     text-decoration: none;
+    color: orange;
+    margin-left: 31%;
+    box-shadow: 1px 6px 15px #ffca8a;
+    height: 1em;
+    font-size: 20px;
+}
+
+#entreemcontato {
+    font-size: 15px;
+    cursor: pointer;
+    width: 11em;
+    height: 3em;
+    color: white;
+    border: none;
+    border-radius: 4em;
+    border: 0.1px solid #555;
+    text-shadow:
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+       background: radial-gradient(circle at center, #ffca8a 0%, #fda32dec 100%);
+       box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.747);
+
+    margin-left: 45%;
+    margin-top: 3em;
+    
+  }
+  #entreemcontato:hover{
+    transition: 2s;
+    transform: scale(1.05);
+  }
+
+h1{
+    text-indent: 24px;
+    margin-top: 4em;
+    margin-left: 31%;
+    /*color: #034942;*/
+    color: #0f857b;
+    margin-bottom: 4em;
 }
 
 .divicons{
@@ -35,7 +101,8 @@
 }
 
 .h2tituloicon{
-    color: ;
+    color: #11998e;
+    /*color: rgb(3,73,66);*/
     margin-left: 34%;
 }
 .h2tituloicon2{
@@ -45,4 +112,96 @@
 .p1{
     width: 15em;
     margin-left: 19%;
+}
+
+footer{
+    display: flex;
+    margin-top: 20em;
+    height: 8em;
+    background: rgba(75, 85, 81, 0.288);
+    gap: 5em;
+    border-radius: 4px;
+}
+
+#logo2{
+    background-image: url('oliveira-stack.png.png');
+    background-size: cover;
+    width: 8em;
+    height: 8em;
+    margin-left: 1em;
+    
+}
+
+.icons{
+    width: 2em;
+    height: 2em;
+    margin-top: 4em;
+    margin-left: 10em;
+}
+
+#sitelink{
+    background: rgba(75, 85, 81, 0.288);
+   
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    @media (min-width: 768px) and (max-width: 1024px){
+        footer{
+            display: flex;
+            margin-top: 20em;
+            height: 8em;
+            background: rgba(75, 85, 81, 0.288);
+            gap: 0.5em;
+            border-radius: 4px;
+        }
+        
+        #logo2{
+            background-image: url('oliveira-stack.png.png');
+            background-size: cover;
+            width: 8em;
+            height: 8em;
+            margin-left: 1em;
+            
+        }
+        
+        .icons{
+            width: 2em;
+            height: 2em;
+            margin-top: 4em;
+            margin-left: 8em;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+
+    footer{
+        display: flex;
+       
+        margin-top: 20em;
+       
+        height: auto;
+        background: rgba(75, 85, 81, 0.288);
+        gap: 1em;
+        border-radius: 4px;
+    }
+    
+    #logo2{
+        background-image: url('oliveira-stack.png.png');
+        background-size: cover;
+        width: 8em;
+        height: 6em;
+        margin-top: -2em;
+        
+    }
+    
+    .icons{
+        width: 2em;
+        height: 2em;
+        margin-top: 2em;
+        gap: 3em;
+    }
+
 }
