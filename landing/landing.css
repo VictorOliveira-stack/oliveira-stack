@@ -37,9 +37,10 @@ body {
     text-decoration: none;
     color: orange;
     margin-left: 31%;
-    box-shadow: 1px 6px 15px #ffca8a;
+    box-shadow: 1px 6px 5px #ffca8a;
     height: 1em;
     font-size: 20px;
+    border-radius: 1em;
 }
 
 #entreemcontato {
@@ -85,7 +86,7 @@ h1{
 
 .tamanhodivicons{
     width: 20em;
-    background-image: radial-gradient(circle,  rgba(158, 252, 252, 0.219), rgba(52, 252, 252, 0.295) );
+    background-image: radial-gradient(circle,  rgba(158, 252, 252, 0.137), rgba(52, 252, 252, 0.185) );
     /*background: rgba(52, 252, 252, 0.219);*/
     border-radius: 1em;
     padding-bottom: 2%;
@@ -110,8 +111,11 @@ h1{
 }
 
 .p1{
-    width: 15em;
-    margin-left: 19%;
+    width: 14em;
+    margin-left: 10%;
+    font-size: 20px;
+    color: #11998e;
+    
 }
 
 footer{
