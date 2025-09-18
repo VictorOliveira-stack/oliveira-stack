@@ -82,6 +82,7 @@ h1{
     display: flex;
     gap: 1em;
     margin-left: 13%;
+    
 }
 
 .tamanhodivicons{
@@ -90,7 +91,7 @@ h1{
     /*background: rgba(52, 252, 252, 0.219);*/
     border-radius: 1em;
     padding-bottom: 2%;
-    
+    box-shadow: 1px 5px 15px #00000063;
 }
 
 .icon{
@@ -110,6 +111,12 @@ h1{
     margin-left: 27%;
 }
 
+.h2tituloicon3{
+    
+    margin-left: 45%;
+    padding-top: 3em;
+}
+
 .p1{
     width: 14em;
     margin-left: 10%;
@@ -117,6 +124,36 @@ h1{
     color: #11998e;
     
 }
+
+#cont1{
+    background-image: radial-gradient(circle,  rgba(158, 252, 252, 0.137), rgba(52, 252, 252, 0.185) );
+    box-shadow: 1px 5px 15px #00000063;
+}
+
+#duoimagem{
+    display: flex; 
+    flex-direction: column;
+}
+
+.pagesLanding{
+    margin-left: 28%;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    display: flex;
+    
+     gap: 1em;
+     
+}
+.pagesLanding img{
+    width: 10em;
+    height: auto;
+    border-radius: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    box-shadow: 1px 5px 15px #000000;
+    margin-top: 1em;
+}
+
+
 
 footer{
     display: flex;
@@ -182,6 +219,147 @@ footer{
 
 @media (min-width: 320px) and (max-width: 767px){
 
+    #cabeçalho{
+        display: flex;
+        background: rgb(228, 244, 252);
+            height: 8em;
+            box-shadow: 2px 5px 5px #88c0acd2 ;
+            /*box-shadow: 2px 5px 5px  rgb(228, 244, 252);*/
+            /*border-radius: 4px;*/
+           
+            border-bottom-left-radius: 2em;
+            border-bottom-right-radius: 4em;
+            
+    }
+    #oliveira{
+        width: 13em;
+        height: 10em;
+        margin-top: -2em;
+    }
+    #contato1{
+        margin-top: 3.4em;
+        text-decoration: none;
+        color: orange;
+        margin-left: 5%;
+        box-shadow: 1px 6px 5px #ffca8a;
+        height: 1em;
+        font-size: 20px;
+        border-radius: 1em;
+    }
+
+    h1{
+        text-indent: 10px;
+        margin-top: 4em;
+        margin-left: 24%;
+        /*color: #034942;*/
+        color: #0f857b;
+        margin-bottom: 4em;
+        font-size: 25px;
+        width: 10em;
+    }
+    .divicons{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-left: 15%;
+        width: 100%;
+
+        
+        
+    }
+    
+    .tamanhodivicons{
+        width: 20em;
+        background-image: radial-gradient(circle,  rgba(158, 252, 252, 0.137), rgba(52, 252, 252, 0.185) );
+        /*background: rgba(52, 252, 252, 0.219);*/
+        border-radius: 1em;
+        padding-bottom: 2%;
+        box-shadow: 1px 5px 15px #00000063;
+    }
+
+    .icon{
+        width: 10em;
+        height: 10em;
+        margin-left: 24%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .h2tituloicon{
+        color: #11998e;
+        /*color: rgb(3,73,66);*/
+        margin-left: 34%;
+    }
+    .h2tituloicon2{
+        margin-left: 27%;
+    }
+    
+    .h2tituloicon3{
+        
+        margin-left: 33%;
+        padding-top: 3em;
+    }
+
+    .p1{
+        width: 14em;
+        margin-left: 10%;
+        font-size: 20px;
+        color: #11998e;
+        
+    }
+    
+    #cont1{
+        background-image: radial-gradient(circle,  rgba(158, 252, 252, 0.137), rgba(52, 252, 252, 0.185) );
+        box-shadow: 1px 5px 15px #00000063;
+    }
+
+    #duoimagem{
+        display: flex; 
+        flex-direction: column;
+        gap: 6em;
+    }
+    
+    .pagesLanding{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-left: 15%;
+    }
+    .pagesLanding img{
+        width: 50%;
+        height: 50%;
+        border-radius: 1em;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #entreemcontato {
+        font-size: 15px;
+        cursor: pointer;
+        width: 11em;
+        height: 3em;
+        color: white;
+        border: none;
+        border-radius: 4em;
+        border: 0.1px solid #555;
+        text-shadow:
+            -1px -1px 0 #000,
+             1px -1px 0 #000,
+            -1px 1px 0 #000,
+             1px 1px 0 #000;
+            background: radial-gradient(circle at center, #ffca8a 0%, #fda32dec 100%);
+            box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.747);
+        
+        margin-left: 33%;
+        margin-top: 3em;
+            
+    }
+    #entreemcontato:hover{
+        transition: 2s;
+        transform: scale(1.05);
+    }
+        
+    
+
     footer{
         display: flex;
        
@@ -207,6 +385,10 @@ footer{
         height: 2em;
         margin-top: 2em;
         gap: 3em;
+    }
+    #sitelink{
+        background: rgba(75, 85, 81, 0.288);
+       
     }
 
 }
