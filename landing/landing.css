@@ -248,24 +248,48 @@ footer{
     }
 
     h1{
-        text-indent: 10px;
+        text-indent: 5px;
         margin-top: 4em;
-        margin-left: 24%;
+        margin-left: 20%;
         /*color: #034942;*/
         color: #0f857b;
         margin-bottom: 4em;
         font-size: 25px;
         width: 10em;
     }
+    @media (min-width: 320px) and (max-width: 375px){
+        h1{
+            text-indent: 5px;
+            margin-top: 4em;
+            margin-left: 13%;
+            /*color: #034942;*/
+            color: #0f857b;
+            margin-bottom: 4em;
+            font-size: 25px;
+            width: 10em;
+        }
+    }
     .divicons{
         display: flex;
         flex-direction: column;
         gap: 1em;
-        margin-left: 15%;
+        margin-left: 12%;
         width: 100%;
 
         
         
+    }
+    @media (min-width: 320px) and (max-width: 375px){
+        .divicons{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin: 8px;
+            width: 100%;
+    
+            
+            
+        }
     }
     
     .tamanhodivicons{
@@ -290,14 +314,37 @@ footer{
         /*color: rgb(3,73,66);*/
         margin-left: 34%;
     }
+     @media (min-width: 376px) and (max-width: 767px){
+        .h2tituloicon{
+        
+            margin-left: 32%;
+            padding-top: 3em;
+        }
+    }
+    
     .h2tituloicon2{
         margin-left: 27%;
     }
+   
     
     .h2tituloicon3{
         
         margin-left: 33%;
         padding-top: 3em;
+    }
+    @media (min-width: 376px) and (max-width: 767px){
+        .h2tituloicon3{
+        
+            margin-left: 32%;
+            padding-top: 3em;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 375px){
+        .h2tituloicon3{
+        
+            margin-left: 27%;
+            padding-top: 3em;
+        }
     }
 
     .p1{
@@ -311,12 +358,14 @@ footer{
     #cont1{
         background-image: radial-gradient(circle,  rgba(158, 252, 252, 0.137), rgba(52, 252, 252, 0.185) );
         box-shadow: 1px 5px 15px #00000063;
+        padding-bottom: 3em;
     }
 
     #duoimagem{
         display: flex; 
         flex-direction: column;
         gap: 6em;
+       
     }
     
     .pagesLanding{
@@ -349,7 +398,7 @@ footer{
             background: radial-gradient(circle at center, #ffca8a 0%, #fda32dec 100%);
             box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.747);
         
-        margin-left: 33%;
+        margin-left: 30%;
         margin-top: 3em;
             
     }
@@ -357,6 +406,32 @@ footer{
         transition: 2s;
         transform: scale(1.05);
     }
+
+    @media (min-width: 320px) and (max-width: 375px){
+        #entreemcontato {
+            font-size: 15px;
+            cursor: pointer;
+            width: 11em;
+            height: 3em;
+            color: white;
+            border: none;
+            border-radius: 4em;
+            border: 0.1px solid #555;
+            text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px 1px 0 #000,
+                 1px 1px 0 #000;
+                background: radial-gradient(circle at center, #ffca8a 0%, #fda32dec 100%);
+                box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.747);
+            
+            margin-left: 24%;
+            margin-top: 3em;
+                
+        }
+    }
+
+  
         
     
 
