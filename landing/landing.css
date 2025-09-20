@@ -641,6 +641,10 @@ footer{
 }
 
 @media (min-width: 1025px) and (max-width: 1439px) {
+    #cabeçalho{
+        width: 100%;
+    }
+
     #contato1{
         margin-top: 3.4em;
         text-decoration: none;
