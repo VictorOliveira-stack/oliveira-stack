@@ -641,6 +641,13 @@ footer{
 }
 
 @media (min-width: 1025px) and (max-width: 1439px) {
+    .container-principal {
+        max-width: 1440px; /* ou 1200px, 1440px, 1600px, etc. */
+        margin: 0 auto;
+        padding: 0 20px; 
+        
+      }
+      
     #cabeçalho{
         width: 100%;
     }
