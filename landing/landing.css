@@ -280,12 +280,21 @@ footer{
         .divicons{
             display: flex;
             flex-direction: column;
-            gap: 1em;
-            margin: 8px;
+            gap: 2em;
+            margin: 1em;
             width: 100%;
     
             
             
+        }
+    }
+    @media (min-width: 376px) and (max-width: 425px){
+        .divicons{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            margin-left: 12%;
+            width: 90%;
         }
     }
     
