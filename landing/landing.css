@@ -569,7 +569,7 @@ footer{
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1024px) {
     #contato1{
         margin-top: 3.4em;
         text-decoration: none;
