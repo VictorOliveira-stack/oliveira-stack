@@ -95,7 +95,7 @@ body::before {
     float: right;
     margin-right: 10em;
     border-radius: 10px;
-    margin-top: -22.8em;
+    margin-top: -27.3em;
 }
 
 #cachu{
@@ -119,8 +119,8 @@ body::before {
        background: radial-gradient(circle at center, #ffca8a 0%, #fda32dec 100%);
        box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.747);
 
-    margin-left: 10em;
-    margin-top: 10em;
+    margin-left: 30em;
+    margin-top: 2em;
     
   }
   #entreemcontato:hover{
@@ -129,7 +129,7 @@ body::before {
   }
 
   #text1{
-    margin-left: 5em;
+    margin-left: 20em;
     margin-top: 2em;
   }
 
@@ -146,7 +146,7 @@ body::before {
 
 #texto2{
     color: orange;
-    margin-left: 5em;
+    margin-left: 20em;
     margin-top: 3em;
 }
 
@@ -164,7 +164,7 @@ body::before {
 }
 
 #texto3{
-    margin-left: 5em;
+    margin-left: 20em;
 }
 
 #result{
@@ -210,7 +210,7 @@ body::before {
 #texto5{
     color: #11998e;
     /*color: rgb(255, 115, 0);*/
-    margin-left: 5em;
+    margin-left: 20em;
     margin-top: 12em;
 }    
 
@@ -240,6 +240,7 @@ body::before {
 }
 .collum1{
     display: flex;
+    flex-direction: column;
 }
 
 footer{
