@@ -1378,7 +1378,11 @@ body{
         margin-top: 5em;
         /*background-color: red;*/
         /*background: linear-gradient(135deg ,#a9bf1a  10%, #cee821  50%, #a9bf1a 100%);*/
-        background: linear-gradient(135deg , #0C9864 10%, #0fcc87  50%, #0C9864 100%);
+        /*background: linear-gradient(135deg , #0C9864 10%, #0fcc87  50%, #0C9864 100%);*/
+
+        background: linear-gradient(135deg, #064e3b 0%, #10b981 50%, #064e3b 100%);
+        /* Um tom de verde floresta profundo nas pontas com um brilho esmeralda no centro */
+        border: 1px solid rgba(255, 255, 255, 0.1); /* Bordas sutis dão aspecto de vidro/luxo */
         
     
         color: white;
@@ -1396,9 +1400,14 @@ body{
         }
     
         .cta:hover{
-            transform: translateY(-3px); /* Eleva o botão levemente */
+            /*transform: translateY(-3px); 
             box-shadow: 0 10px 20px rgba(220, 53, 70, 0.527);
-            color: white;
+            color: white;*/
+
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); /* Brilho neon suave em vez de sombra preta */
+            filter: brightness(1.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
     
     
