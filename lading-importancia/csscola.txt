@@ -1,0 +1,485 @@
+@media(min-width: 1024px)  {
+
+        body{
+            margin: 0;
+            text-decoration: none;
+            /*background: #275370;*/
+            background: url(fundobase.png);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            font-family: sans-serif;
+        
+             width: 100%; margin-left: 16%;
+        }
+
+        
+        
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            
+        }
+        
+        
+        
+            .cabecalho {
+                position: relative; /* Necessário para prender a imagem dentro */
+                max-width: 768px;
+                height: 2em;
+                overflow: hidden;
+                
+                padding-top: 1em;
+                box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.588);
+        
+                display: flex;
+                
+              }
+              
+              .cabecalho::before {
+                content: "";
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background-image: url("fundo02.png");
+                background-size: cover;
+                background-position: center;
+                opacity: 0.4; /* Aqui você controla a transparência da imagem (0 a 1) */
+                z-index: -1;  /* Joga a imagem para trás do conteúdo */
+                
+              }
+        
+              .cabecalho a {
+                color: white;
+                text-decoration: none;
+                font-size: 8px;
+                padding-left: 6em;
+                
+              }
+        
+        
+        
+        
+        
+            .logo{
+                width: 30px;
+                height: 30px;
+                filter: invert(1) brightness(100);
+                margin-left: 15px;
+            }
+        
+        
+            .txtparadisplay {
+                display: flex; /* Mantemos o flex para centralizar o texto se necessário, mas... */
+                position: relative; /* FUNDAMENTAL: Cria o contêiner de referência para a imagem absoluta */
+                align-items: center; /* Centraliza o texto verticalmente, se necessário */
+                width: 100%; /* Garante que o contêiner do título ocupe toda a largura */
+                /* Removemos flex-direction, pois queremos o h1 livre */
+                min-height: 20em; /* Dica: define uma altura mínima para garantir que o contêiner pai tenha espaço para a imagem flutuar */
+            }
+            
+            .txtparadisplayh {
+                /* O H1 agora flui naturalmente no layout, sem ser afetado pela imagem */
+                 /* Limpa margens padrão */
+                padding-right: 5em; /* Opcional: dá um espaço para o texto não ficar colado se a imagem estiver na direita */
+                max-width: 60%; /* Opcional: limita a largura do texto para ele não ficar muito longo e dar mais espaço para a imagem */
+                position: relative; /* Garante que o texto fique acima da imagem no z-index se elas se sobrepuserem */
+                z-index: 2; /* Texto acima da imagem */
+            }
+            
+            .txtparadisplayimg {
+                position: absolute; /* FUNDAMENTAL: Remove a imagem do fluxo normal do documento */
+                z-index: 1; /* Imagem fica sob o texto */
+                
+                /* Controles de Movimentação Livre */
+                top: 50%; /* Centraliza verticalmente em relação ao .titulo */
+                right: 1em; /* Fixa a uma distância da borda direita do .titulo */
+                transform: translateY(-50%); /* Ajuste fino para centralização vertical exata */
+                
+                /* Controles de Tamanho e Estilo Originais */
+                width: 20em; /* Mantém o tamanho original */
+                height: 20em; /* Mantém o tamanho original */
+                border-radius: 10px;
+               
+                /*opacity: 0.6;*/ /* Sua transparência original */
+                padding-top: 10em; /* Resetado, pois usamos top/right para posicionar */
+                filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.804));
+            }
+            
+            
+            .txtparadisplay2 {
+                display: flex; /* Mantemos o flex para centralizar o texto se necessário, mas... */
+                position: relative; /* FUNDAMENTAL: Cria o contêiner de referência para a imagem absoluta */
+                align-items: center; /* Centraliza o texto verticalmente, se necessário */
+                width: 100%; /* Garante que o contêiner do título ocupe toda a largura */
+                /* Removemos flex-direction, pois queremos o h1 livre */
+                min-height: 20em; /* Dica: define uma altura mínima para garantir que o contêiner pai tenha espaço para a imagem flutuar */
+            }
+            
+            .txtparadisplayh2 {
+                /* O H1 agora flui naturalmente no layout, sem ser afetado pela imagem */
+                 /* Limpa margens padrão */
+                padding-right: 5em; /* Opcional: dá um espaço para o texto não ficar colado se a imagem estiver na direita */
+                max-width: 60%; /* Opcional: limita a largura do texto para ele não ficar muito longo e dar mais espaço para a imagem */
+                position: relative; /* Garante que o texto fique acima da imagem no z-index se elas se sobrepuserem */
+                z-index: 2; /* Texto acima da imagem */
+            }
+            
+            .txtparadisplayimg2 {
+                position: absolute; /* FUNDAMENTAL: Remove a imagem do fluxo normal do documento */
+                z-index: 1; /* Imagem fica sob o texto */
+                
+                /* Controles de Movimentação Livre */
+                top: 50%; /* Centraliza verticalmente em relação ao .titulo */
+                right: 1em; /* Fixa a uma distância da borda direita do .titulo */
+                transform: translateY(-50%); /* Ajuste fino para centralização vertical exata */
+                
+                /* Controles de Tamanho e Estilo Originais */
+                width: 20em; /* Mantém o tamanho original */
+                height: 20em; /* Mantém o tamanho original */
+                border-radius: 10px;
+               
+                opacity: 0.6; /* Sua transparência original */
+                padding-top: 1em; /* Resetado, pois usamos top/right para posicionar */
+                filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.804));
+            }
+            
+            
+            .txtparadisplay3 {
+                display: flex; /* Mantemos o flex para centralizar o texto se necessário, mas... */
+                position: relative; /* FUNDAMENTAL: Cria o contêiner de referência para a imagem absoluta */
+                align-items: center; /* Centraliza o texto verticalmente, se necessário */
+                width: 100%; /* Garante que o contêiner do título ocupe toda a largura */
+                /* Removemos flex-direction, pois queremos o h1 livre */
+                min-height: 20em; /* Dica: define uma altura mínima para garantir que o contêiner pai tenha espaço para a imagem flutuar */
+            }
+            
+            .txtparadisplayh3 {
+                /* O H1 agora flui naturalmente no layout, sem ser afetado pela imagem */
+                 /* Limpa margens padrão */
+                padding-right: 5em; /* Opcional: dá um espaço para o texto não ficar colado se a imagem estiver na direita */
+                max-width: 60%; /* Opcional: limita a largura do texto para ele não ficar muito longo e dar mais espaço para a imagem */
+                position: relative; /* Garante que o texto fique acima da imagem no z-index se elas se sobrepuserem */
+                z-index: 2; /* Texto acima da imagem */
+            }
+            
+            .txtparadisplayimg3 {
+                position: absolute; /* FUNDAMENTAL: Remove a imagem do fluxo normal do documento */
+                z-index: 1; /* Imagem fica sob o texto */
+                
+                /* Controles de Movimentação Livre */
+                top: 50%; /* Centraliza verticalmente em relação ao .titulo */
+                right: 1em; /* Fixa a uma distância da borda direita do .titulo */
+                transform: translateY(-50%); /* Ajuste fino para centralização vertical exata */
+                
+                /* Controles de Tamanho e Estilo Originais */
+                width: 20em; /* Mantém o tamanho original */
+                height: 25em; /* Mantém o tamanho original */
+                border-radius: 10px;
+               
+                /*opacity: 0.6;*/ /* Sua transparência original */
+                padding-top: 8em; /* Resetado, pois usamos top/right para posicionar */
+                filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.804));
+            }
+        
+        
+            .section1{
+            /*width: 100%;*/
+            max-width: 768px;
+            height: 20em;
+            background-image: url(fundo02.png);
+            
+            padding-bottom: 5em;
+            box-shadow: 0 4px 20px rgba(5, 5, 5, 0.76);
+        }
+        
+        .section1::before{
+            opacity: 0.2;
+            
+            
+        }
+        
+        .section2{
+            max-width: 768px;
+            height: auto;
+            background-image: url(fundo02.png);
+            padding-bottom: 3em;
+            box-shadow: 0 4px 20px rgba(5, 5, 5, 0.76);
+        }
+        .section2::before{
+            opacity: 0.2;
+        }
+        
+        .section2{
+            max-width: 768px;
+            height: auto;
+            background-image: url(fundo02.png);
+            padding-bottom: 3em;
+            box-shadow: 0 4px 20px rgba(5, 5, 5, 0.76);
+        }
+        .section2::before{
+            opacity: 0.2;
+        }
+        
+        .section3{
+            max-width: 768px;
+            height: auto;
+            background-image: url(fundo01.png);
+            padding-bottom: 3em;
+            box-shadow: 0 4px 20px rgba(5, 5, 5, 0.76);
+        }
+        .section3::before{
+            opacity: 0.2;
+        }
+        
+        .section4{
+            max-width: 768px;
+            height: auto;
+            background-image: url(fundo02.png);
+            padding-bottom: 3em;
+            box-shadow: 0 4px 20px rgba(5, 5, 5, 0.76);
+        }
+        .section4::before{
+            opacity: 0.2;
+        }
+        
+        .section5{
+            /*width: 100%;*/
+            max-width: 768px;
+            height: auto;
+            
+            background-image: url(conecgem.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 5em;
+            box-shadow: 0 4px 20px rgba(5, 5, 5, 0.76);
+        }
+        
+        
+            h1{
+                font-size: 20px;
+                /*color: rgb(218, 208, 19);*/
+                color: white;
+                width: 7em;
+                margin-left: 1em;
+                padding-top: 3em;
+            }
+        
+        
+        
+            .h31{
+                color: #E0E0E0;
+                font-size: 15px;
+                padding-left: 1.5em;
+                padding-top: 1em;
+                width: 20em;
+                word-wrap: break-word;
+            }
+        
+        
+        
+            .h21{
+                color: white;
+                font-size: 18px;
+                padding-left: 1em;
+                padding-top: 1em;
+                width: 9em;
+                word-wrap: break-word;
+            }
+        
+        
+        
+            .h22{
+                color: white;
+                font-size: 18px;
+                /*padding-left: 1em;*/
+                padding-top: 1em;
+                
+                word-wrap: break-word;
+        
+                display: flex;    /* Melhor que inline-block para alinhar texto */
+                align-items: center;     /* Centraliza o texto verticalmente */
+                justify-content: center;
+            }
+        
+        
+        
+            .cta{
+            display: flex;    /* Melhor que inline-block para alinhar texto */
+            align-items: center;     /* Centraliza o texto verticalmente */
+            justify-content: center;  /* Centraliza o texto horizontalmente */
+            
+            width: 8em;
+            height: 2em;
+            margin: 0 auto;
+            
+            margin-bottom: 5em;
+            
+            /*background-color: red;*/
+            /*background: linear-gradient(135deg ,#a9bf1a  10%, #cee821  50%, #a9bf1a 100%);*/
+            background: linear-gradient(135deg , #0C9864 10%, #0fcc87  50%, #0C9864 100%);
+            
+        
+            color: white;
+            font-weight: 500;
+            text-decoration: none;   /* Remove o sublinhado */
+            
+            border: none;            /* Remove bordas automáticas */
+            outline: none;           /* Remove o contorno de foco */
+            box-sizing: border-box;
+        
+            border-radius: 10px;
+        
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(5, 5, 5, 0.76);
+            }
+        
+            .cta:hover{
+                transform: translateY(-3px); /* Eleva o botão levemente */
+                box-shadow: 0 10px 20px rgba(220, 53, 70, 0.527);
+                color: white;
+            }
+        
+        
+        
+            .p1{
+            color: #E0E0E0;
+            width: 20em;
+            padding-left: 1em;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        
+        
+            .p2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            color: #E0E0E0;
+            width: auto;
+            padding-left: 1em;
+            padding-right: 1em;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        
+        
+        
+            .sizeimg1{
+                width: 6em;
+                height: 3em;
+                background: white;
+                gap: 2em;
+                border-radius: 3px;
+            }
+        
+        
+        
+           #divimg1 {
+            margin-top: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            gap: 20px;
+           }
+        
+        
+        
+            .divcard1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .divcard1 img{
+                width: 9em;
+                height: 6em;
+                border-radius: 3px;
+                margin-left: 5px;
+                margin-right: 2px;
+                margin-top: 5px;
+            }
+        
+            .txt1{
+                padding-left: 10px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+        
+        
+        
+        
+        
+        
+            .card1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background: white;
+                margin-left: 5%;
+                margin-right: 5%;
+                box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.754);
+                border-radius: 5px;
+            }
+        
+        
+        
+        /*"Footer"*/
+        
+        
+            .cabecalho2 {
+                position: relative; /* Necessário para prender a imagem dentro */
+                max-width: 768px;
+                height: 2em;
+                overflow: hidden;
+                
+                padding-top: 1em;
+                box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.588);
+        
+                display: flex;
+                
+              }
+              
+              .cabecalho2::before {
+                content: "";
+                position: absolute;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background-image: url("fundo02.png");
+                background-size: cover;
+                background-position: center;
+                opacity: 0.4; /* Aqui você controla a transparência da imagem (0 a 1) */
+                z-index: -1;  /* Joga a imagem para trás do conteúdo */
+                
+              }
+        
+              .cabecalho2 a {
+                
+                color: white;
+                text-decoration: none;
+                font-size: 8px;
+                padding-left: 6em;
+                 
+              }
+        
+            .logo2{
+                width: 5em;
+                height: 3em;
+                filter: invert(1) brightness(100);
+                margin-left: 15px;
+                margin-top: -0.8em;
+        
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        
+}
