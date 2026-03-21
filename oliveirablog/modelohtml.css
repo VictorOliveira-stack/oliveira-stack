@@ -1,0 +1,407 @@
+ body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Coloca o conteúdo e o footer em coluna */
+}
+
+@media (max-width: 767px){
+
+    .container{
+
+    }
+
+    .btn-voltar {
+        align-self: flex-start; /* O SEGREDO: joga apenas este elemento para a esquerda */
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: #1a73e8; /* Azul Tech do seu player */
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 20px; /* Espaço para o título não colar nele */
+        transition: transform 0.2s ease;
+    }
+
+    .btn-voltar:hover{
+        color: #589df8;
+    }
+
+    .img1{
+        width: 90%;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .google-player-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f8f9fa; /* Cinza bem claro do Google */
+        border: 1px solid #e0e0e0;
+        padding: 8px 16px;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        max-width: 400px;
+    }
+    
+    .btn-google-play {
+        background: none;
+        border: none;
+        color: #1a73e8; /* Azul clássico do Google/Tech */
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+        transition: opacity 0.2s;
+    }
+    
+    .btn-google-play:hover {
+        opacity: 0.7;
+    }
+    
+    /* Barra de Progresso */
+    .player-progress-bg {
+        flex-grow: 1;
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #player-progress-bar {
+        width: 0%; /* Começa em zero */
+        height: 100%;
+        background: #1a73e8;
+        transition: width 0.1s linear;
+    }
+    
+    footer {
+        margin-top: auto !important; /* Força o footer para o final do flex container */
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .container {
+        max-width: 1000px; /* Reduzi um pouco para não colar nas bordas do tablet */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column; /* Empilha o título, imagem e artigo */
+        align-items: center;    /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente se houver altura */
+        min-height: 100vh;      /* Ocupa no mínimo a altura total da tela */
+        text-align: center;     /* Garante que os textos internos também alinhem */
+    }
+
+    /*.img1{
+        width: 90%;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }*/
+
+    .btn-voltar {
+        align-self: flex-start; /* O SEGREDO: joga apenas este elemento para a esquerda */
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: #1a73e8; /* Azul Tech do seu player */
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 20px; /* Espaço para o título não colar nele */
+        transition: transform 0.2s ease;
+    }
+
+    .btn-voltar:hover{
+        color: #589df8;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 600px; /* Evita que a imagem fique gigante no tablet */
+        height: auto;     /* Mantém a proporção da imagem */
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    .google-player-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f8f9fa; /* Cinza bem claro do Google */
+        border: 1px solid #e0e0e0;
+        padding: 8px 16px;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        max-width: 400px;
+    }
+    
+    .btn-google-play {
+        background: none;
+        border: none;
+        color: #1a73e8; /* Azul clássico do Google/Tech */
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+        transition: opacity 0.2s;
+    }
+    
+    .btn-google-play:hover {
+        opacity: 0.7;
+    }
+    
+    /* Barra de Progresso */
+    .player-progress-bg {
+        flex-grow: 1;
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #player-progress-bar {
+        width: 0%; /* Começa em zero */
+        height: 100%;
+        background: #1a73e8;
+        transition: width 0.1s linear;
+    }
+    
+    footer {
+        flex-shrink: 0; /* Garante que o footer não seja esmagado */
+        width: 100%;
+        background-color: #1a1a1a; /* Cor escura que você está usando */
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1365px){
+
+    .container {
+        max-width: 1000px; /* Reduzi um pouco para não colar nas bordas do tablet */
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column; /* Empilha o título, imagem e artigo */
+        align-items: center;    /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente se houver altura */
+        min-height: 100vh;      /* Ocupa no mínimo a altura total da tela */
+        text-align: center;     /* Garante que os textos internos também alinhem */
+    }
+
+    /*.img1{
+        width: 90%;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }*/
+
+    .btn-voltar {
+        align-self: flex-start; /* O SEGREDO: joga apenas este elemento para a esquerda */
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: #1a73e8; /* Azul Tech do seu player */
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 20px; /* Espaço para o título não colar nele */
+        transition: transform 0.2s ease;
+    }
+
+    .btn-voltar:hover{
+        color: #589df8;
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 600px; /* Evita que a imagem fique gigante no tablet */
+        height: auto;     /* Mantém a proporção da imagem */
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    .google-player-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f8f9fa; /* Cinza bem claro do Google */
+        border: 1px solid #e0e0e0;
+        padding: 8px 16px;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        max-width: 400px;
+    }
+    
+    .btn-google-play {
+        background: none;
+        border: none;
+        color: #1a73e8; /* Azul clássico do Google/Tech */
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+        transition: opacity 0.2s;
+    }
+    
+    .btn-google-play:hover {
+        opacity: 0.7;
+    }
+    
+    /* Barra de Progresso */
+    .player-progress-bg {
+        flex-grow: 1;
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #player-progress-bar {
+        width: 0%; /* Começa em zero */
+        height: 100%;
+        background: #1a73e8;
+        transition: width 0.1s linear;
+    }
+    
+    footer {
+        flex-shrink: 0; /* Garante que o footer não seja esmagado */
+        width: 100%;
+        background-color: #1a1a1a; /* Cor escura que você está usando */
+    }
+
+
+}
+
+@media (min-width: 1366px) and (max-width: 2560px){
+
+    .container {
+        flex: 1 0 auto; /* Isso faz o conteúdo "esticar" e empurrar o footer para o fundo */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 50px; /* Espaço para o footer não encostar no texto */
+    }
+    /*.img1{
+        width: 90%;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }*/
+
+    .btn-voltar {
+        align-self: flex-start; /* O SEGREDO: joga apenas este elemento para a esquerda */
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: #1a73e8; /* Azul Tech do seu player */
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 20px; /* Espaço para o título não colar nele */
+        transition: transform 0.2s ease;
+    }
+
+    .btn-voltar:hover{
+        color: #589df8;
+    }
+    
+    .btn-voltar:hover {
+        transform: translateX(-5px); /* Pequena animação de "empurrão" para a esquerda */
+        color: #000; /* Ou a cor que preferir no hover */
+    }
+    
+    .material-symbols-outlined {
+        font-size: 18px !important; /* Ajusta o tamanho do ícone */
+    }
+
+    .img1 {
+        width: 100%;
+        max-width: 600px; /* Evita que a imagem fique gigante no tablet */
+        height: auto;     /* Mantém a proporção da imagem */
+        border-radius: 12px;
+        margin: 20px 0;
+    }
+
+    .google-player-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #f8f9fa; /* Cinza bem claro do Google */
+        border: 1px solid #e0e0e0;
+        padding: 8px 16px;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        max-width: 400px;
+    }
+    
+    .btn-google-play {
+        background: none;
+        border: none;
+        color: #1a73e8; /* Azul clássico do Google/Tech */
+        font-weight: 600;
+        font-size: 0.9rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 5px;
+        transition: opacity 0.2s;
+    }
+    
+    .btn-google-play:hover {
+        opacity: 0.7;
+    }
+    
+    /* Barra de Progresso */
+    .player-progress-bg {
+        flex-grow: 1;
+        height: 4px;
+        background: #e0e0e0;
+        border-radius: 2px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #player-progress-bar {
+        width: 0%; /* Começa em zero */
+        height: 100%;
+        background: #1a73e8;
+        transition: width 0.1s linear;
+    }
+    
+    footer {
+        flex-shrink: 0; /* Garante que o footer não seja esmagado */
+        width: 100%;
+        background-color: #1a1a1a; /* Cor escura que você está usando */
+    }
+
+
+}

@@ -1,140 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oliveira-Stack | Desenvolvimento Web | Desenvolvimento de sistemas</title>
-    <meta name="description" content="A Oliveira-Stack desenvolve sites e sistemas web que transformam seu negócio. Criamos soluções sob medida para aumentar sua produtividade e presença digital.">
+    
+    <title>Oliveira-Stack | Consultoria em TI e Desenvolvimento de Software</title>
+    <meta name="title" content="Oliveira-Stack | Consultoria em TI e Desenvolvimento de Software High-End">
+    <meta name="description" content="Especialistas em soluções nativas e escaláveis com Go e Node.js. Transformamos ideias em tecnologia de alta performance para E-commerce, SaaS e Sites Institucionais.">
+    <meta name="keywords" content="Consultoria TI, Desenvolvimento de Software, Go, Golang, Node.js, E-commerce, SaaS, Oliveira-Stack, Victor de Oliveira, Sistemas PDV, Natal-RN, São José dos Campos - SP">
+    <meta name="author" content="Victor de Oliveira Fonseca">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oliveirastack.online/">
+    <meta property="og:title" content="Oliveira-Stack | Tecnologia que Impulsiona seu Crescimento">
+    <meta property="og:description" content="Desenvolvimento sob medida com foco em performance e estabilidade. Conheça nossas soluções em software e consultoria.">
+    <meta property="og:image" content="https://oliveirastack.online/oliveira.png"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://oliveirastack.online/">
+    <meta property="twitter:title" content="Oliveira-Stack | Tecnologia High-End">
+    <meta property="twitter:description" content="Transformando ideias em código e negócios em tecnologia de alta performance.">
+    <meta property="twitter:image" content="https://oliveirastack.online/oliveira.png">
+
     <link rel="icon" type="image/png" href="favicon.ico">
+
+    <link rel="icon" type="image/png" href="/oliveira.png">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="principal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet"  href="index.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <div class="container-principal">
 
-    <div class="cabecalho">
+    <div class=".container-fluid" id="containermor">
 
-        <div id="logo"></div>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadowbox1 sectioncolor1" style="z-index: 3;">
+        <div class="container-fluid">
 
-        <div class="botoescabeçalho">
-            <a class="textobotoescabeçalho botoescabeçalho" href="https://wa.me/5512996165593?text=Olá, gostaria de saber mais sobre os serviços de sites e softwares da Oliveira-Stack." target="_blank">Contato</a>
-
-            <a class="textobotoescabeçalho botoescabeçalho" href="blog.html">Blog</a>
-
-            <a class="textobotoescabeçalho botoescabeçalho" href="sobre.html">Sobre</a>
-        </div>
-    </div>
-
-    <div style="margin-top: 10em;;">
-        <a href="https://wa.me/5512996165593?text=Olá, gostaria de saber mais sobre os serviços de sites e softwares da Oliveira-Stack." target="_blank">
-            <img id="cachu" src="cachu.png" alt="">
-        </a>
-    </div>
-
-    <div   style="margin-top: 10em;;" class="container1 containercachu">
-
-        <div class="collum1">
-
-         <div id="text1" class="texto1">
-            <h1 class="psize1">Hoje a tecnologia é a sua maior aliada! </h1> <strong>Lembre-se da alegria das coisas simples. Essa é a essência que a nossa tecnologia traz de volta para a sua vida. Nossas soluções são criadas para que você realize suas tarefas com facilidade, reduzindo tempo e esforço. </strong>
-         </div>
-
-        
-         <a id="botaoentreemcontato" href="https://wa.me/5512996165593?text=Olá, gostaria de saber mais sobre os serviços de sites e softwares da Oliveira-Stack." target="_blank">
-            <button id="entreemcontato">Descubra Como</button>
-         </a>
-        
-
-        </div>
-
-        <div id="cachoeira"></div>
-        <br><br>
-    </div>
-
-    <div  style="margin-top: 10em;" class="">
-        
-       <div id="familia">
-        <div id="texto2" class="texto1">
-           
-                <h2 class="psize2">Esse é o caminho mais leve para o sucesso:</h2>
-           <strong>  Ter seu público juntinho de você! <br><br><br>
-            Conecte-se com mais pessoas que buscam o seu produto ou as suas soluções.
-             Tenha uma presença digital que reflita a sua essência e converse com pessoas como você,
-              criando laços duradouros.</strong>
+            <div class="text-center">
+                <img src="/oliveira.png" class="rounded logotop" alt="Logo Oliveira-Stack - Consultoria em TI e Desenvolvimento de Software">
             </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/oliveirablog/oliveirablog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/sobre.html">Sobre</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contatos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="http://wa.me/5512996165593?text='Olá gostaria de saber melhor sobre as soluções que vocêS da Oliveira-Stack oferecem" target="_blank">WhatsApp</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/oliveirastack/" target="_blank">Instagram</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/@oliveira-stack" target="_blank">YouTube</a></li>
+                </ul>
+              </li>
+              <!--
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+          </div>
+        </div>
+      </nav>
+    <!--nav bar-->
+
+
+    <section class="py-5 sectioncolor1-1 " style="display: flex;">
+
+      <br><br><br><br>
+      
+
+     <div id="primeirotexto" class="container">
+         <div class="row"> 
+            <div class="col-md-10"> 
+                <h1>Hoje a tecnologia é a sua maior aliada!</h1>
+
+                <p class="pcolor1">
+
+                  Com tecnologias criadas diretamente sob demanda para sua empresa buscamos trazer resultados e mais tempo
+                  livre para seu time se empenhar em tarefas mais estrategicas.
+
+                </p>
+            </div>
+
+            <div title="Falar com Victor Oliveira" class="d-flex flex-wrap gap-3 align-items-center mt-4">
+              <a class="btn-oliveira-premium" href="http://wa.me/5512996165593?text='Olá gostaria de ter a tecnologia como minha aliada, podemos ver um orçamento?" target="_blank">
+                  Solicitar Consultoria <span class="ms-2">→</span>
+              </a>
+              <!--
+              <a href="#projetos" class="text-decoration-none fw-bold text-secondary link-discreto">
+                  Ver projetos
+              </a>-->
+          </div>
+            
+        <div class="col-md-6"></div>
+        </div>
+    </div>
+
+    <!--Globo-->
+    <div class="div-do-globo corglobo div-do-globo" style="width: 100%; max-width: 600px; aspect-ratio: 1; margin: 0 auto;">
+      <canvas id="cobe" style="width: 100%; height: 100%;" alt="Visualização global de conexões tecnológicas e sistemas escaláveis"></canvas>
+    </div>
+    </section>
+
+    <div style="height: 1px; background: rgba(0, 0, 0, 0.492);">
+      
+    </div>
+
+
+    <section class="py-5 sectioncolor3 ">
+
+      <br><br><br><br>
+
+      <!--particles.js-->
+      <div id="particles-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></div>
+      <!--particles.js-->
+
+
+    <div class="container sectionblack">
+      <div class="row justify-content-center align-items-start"> 
+          
+          <div class="col-md-5 mb-5 mb-md-0"> 
+              <h2 class="fontcolor1">Site Institucional</h2>
+              <p class="fontcolor2">
+                  Empresas líderes utilizam o site institucional para consolidar sua autoridade,
+                   conectar ideias ao público-alvo e apresentar serviços de forma clara e concisa.
+              </p>
+              <a class="aa1" href="http://wa.me/5512996165593?text=''Olá gostaria de ser uma empresa lider de mercado, podemos ver um orçamento de site institucional com a Oliveira-Stack?" target="_blank">
+                  Seja líder de mercado.
+              </a>
+          </div>
+  
+          <div class="col-md-5"> 
+              <h2 class="fontcolor1">E-commerce</h2>
+              <p class="fontcolor2">
+                  Ultrapasse as barreiras do seu balcão físico e expanda suas vendas.
+                   Com um E-commerce, sua loja opera 24h por dia, sem interrupções,
+                    maximizando seu alcance e lucratividade.
+              </p>
+              <a class="aa1" href="http://wa.me/5512996165593?text=''Olá gostaria de maximizar o meu alcance com as soluções de E-commerce que a Oliveira-Stack pode criar exclusivamente para mim." target="_blank">
+                  Maximizar alcance.
+              </a>
+          </div>
+  
+        </div>
+    </div>
+
+        <br><br><br><br>
+
+    </section>
+
+
+
+    <section class="py-5 sectiondiplay1 ">
+
+    <div class="z-1 position-absolute p-5 rounded-3 sectiondiplay1 ">
+
+      <div class="card shadowbox1 card-glass-tech" style="width: 18rem; z-index: 10;">
+        <div class="card-body ">
+          <h5 class="card-title">Foco total em conversão</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"> Ter seu público junto de você atravez de uma landingpage!</h6>
+          <p class="card-text">
+              Uma Landing Page é projetada com um único objetivo: guiar o visitante até a ação. Eliminamos distrações e pontos de fuga, utilizando uma comunicação persuasiva que destaca o valor do seu produto e traz resultados diretos para o seu caixa.
+            
+              <a class="aa1" href="http://wa.me/5512996165593?text='Olá gostaria de meu público juntinho das minhas idéias e produtos atravez de uma landingpage." target="_blank">
+              Ter seu público junto de você.
+            </a>
+              <br><br><br><br>
+            
+          </p>
+          
+          <!--<a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>-->
+        </div>
+      </div>
+
+                       
+
+      <div class="card shadowbox1 card-glass-tech" style="width: 18rem; z-index: 10;">
+        <div class="card-body">
+          <h5 class="card-title">Foco em resultados.</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Site especializado!</h6>
+          <p class="card-text">
+            Uma Landing Page guia o visitante para uma ação específica, eliminando distrações e entregando uma comunicação persuasiva que converte interesse em faturamento.
+            
+            <a class="aa1" href="http://wa.me/5512996165593?text='Olá gostaria de meu público juntinho das minhas idéias e produtos atravez de uma landingpage." target="_blank">
+              Descobrir condições.
+            </a>
+
+            <br><br><br><br><br><br><br>
+          </p>
+          <!--<a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>-->
+        </div>
+      </div>
+
+    </div>
+
+   </section>
+
+  
+
+          <!--Não remover essa section-->
+    <section class="py-5 sectioncolor2-2 heigth1 ">
+                      
+
+        <div class="container">
+            <div class="row"> 
+               <div class="col-md-6"> 
+                   <h2></h2>
+                   <p>
+                    
+                    <br> <br>
+
+                   
+                   </p>
+               </div>
+           <div class="col-md-6"></div>
+           </div>
        </div>
-    </div>
 
-    <div style="margin-top: 10em;">
-        <img id="result" src="canvameninamobile.png" alt="sites trazem resultados e posicionamento(branding). Em São Paulo e São José dos Campos, Brasil">
-    </div>
-
-    <div style="margin-top: 10em;" class="container2 ">
-        <div id="texto3" class="texto1">
-            <h2 class="psize1">Com soluções sob medida, você não terá apenas resultados. Você terá tempo.</h2>
-            Tempo para os sorrisos, para os abraços, para os momentos que realmente importam.
-            Esteja mais próximo da sua família, do seu hobby, da sua paz. Fique focado no que nutre a sua alma, enquanto a tecnologia trabalha em silêncio ao seu favor.
-            Porque a verdadeira vitória é ter uma vida mais leve, não uma agenda mais cheia.</div>
-        <div id="resultados"></div>
-        <br><br>
-    </div>
+      
+    </section>
 
 
-    <div  style="margin-top: 10em;" class="">
-        
-        <div id="moça">
-         <div id="texto4">
-           
 
-              <h2 class="psize2">
-                A vida e realizações andam juntos!
-              </h2>
-             <strong>  
-                Nada melhor que realizar seus sonhos e ir onde tanto deseja.
-            </strong>
-         </div>
-        </div>
-     </div>
 
-     <div style="margin-top: 10em;">
-        <img id="canvasman" src="canvasman.png" alt="segurança cybernetica é importante, e branding e ter um site é importante, na America Latina, Estados Unidos e Europa.">
-     </div>
-
-     <div style="margin-top: 10em;" class="container1">
-        <div id="texto5" class="texto1">
-            <h2 class="psize1">A segurança para dias melhores tem uma aliada genuína: a tecnologia.</h2>
-            Nós oferecemos soluções seguras e simples. Tenha a certeza de que sua empresa está em um lugar de confiança com os seus clientes, com uma solução pura e transparente. 
-            </div>
-        <div id="man"></div>
-    </div>
-   
-    <footer>
-        <div id="logo2"></div>
-        <a href="https://wa.me/5512996165593?text=Olá, gostaria de saber mais sobre os serviços de sites e softwares da Oliveira-Stack." target="_blank">
-            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
-        </svg>
-        </a>
-
-        <a href="https://www.instagram.com/oliveirastack?igsh=dHc2d2Z6bzU1b3h6" target="_blank">
-            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
-        </a>
-
-        <a href="https://youtube.com/@oliveira-stack?si=EczXqNBkzBembIYH" target="_blank">
-            <svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"/></svg>
-        </a>
-   
-    </footer>
+  <section class="py-5 sectioncolor3">
     
 
+      <!--particles.js-->
+      <div id="particles2-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></div>
+      <!--particles.js-->
+
+
+      <!--qual coisa retornar o para a antiga sessão dele abixo-->
+    <div class="card z-1 shadowbox1 sectiondiplay2 mx-auto card-glass-tech cardpropaganda">
+
+      <section id="produtos">
+        <div class="card-body " >
+          <h5 class="card-title">
+             Em breve: Uma nova inteligência para o seu balcão.
+          </h5>
+       
+           <p>
+                Estamos desenvolvendo um sistema de Ponto de Venda (PDV) focado em performance e simplicidade.
+              Mais do que registrar vendas, nossa solução nasce para ser o coração da gestão do seu negócio físico.
+            </p>
+
+            <p>
+              [Projeto em fase de desenvolvimento]
+            </p>
+
+        </div>
+      </section>
+
+      </div>
+
+  
+      <br><br><br><br>
+
+      
+     <div class="container  sectionblack centercenter">
+         <div class="row sectionblack"> 
+            <div class="col-md-10 "> 
+                <h2 class="fontcolor1">Tecnologia que impulsiona o seu crescimento</h2>
+                <p class="fontcolor2">
+
+                  Nosso foco é desenvolver ferramentas que coloquem sua empresa à frente do tempo. Criamos soluções que garantem que seu negócio seja sempre a primeira escolha do mercado, unindo inovação e estabilidade.
+
+                </p>
+
+                <a class="aa1" href="http://wa.me/5512996165593?text='Olá gostaria de saber melhor sobre as soluções que vocês da Oliveira-Stack oferecem" target="_blank">
+                  Obter sistema para sua empresa.
+                </a>
+
+            </div>
+        </div>
+
+        <div class="row centercenter" > 
+          <div class="col-md-10"> 
+              <h2 class="fontcolor1">Sua visão, potencializada por software</h2>
+              <p class="fontcolor2">
+
+                Na Oliveira-Stack, acreditamos que a tecnologia deve servir ao seu propósito. Trabalhamos lado a lado com você para desenvolver sistemas que transformam desafios operacionais em vantagens competitivas reais.
+
+              </p>
+              <a class="aa1" href="http://wa.me/5512996165593?text='Olá gostaria desenvolver meu sistema com a ajuda da Oliveira-Stack" target="_blank">
+                Ter sua idéia de mundo realizada.
+              </a>
+          </div>
+      </div>
+
     </div>
 
-    <script src="js.js"></script>
+        <br><br><br><br>
 
+    </section>
+
+    <section class="py-5 sectiondiplay1 ">
+
+    <div class="z-1 position-absolute p-5 rounded-3 sectiondiplay1 positcard1">
+
+      <div class="card shadowbox1 card-glass-tech" style="width: 18rem; z-index: 10;">
+        <div class="card-body ">
+          <h5 class="card-title">SaaS Sob Encomenda</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"> Transforme sua ideia de negócio em uma plataforma escalável. </h6>
+          <p class="card-text">
+             
+              Desenvolvemos softwares por assinatura (SaaS) personalizados, criando ferramentas que resolvem
+             dores reais do seu setor. Tenha uma propriedade digital que não apenas informa, mas executa
+             processos e gera receita recorrente para você.
+
+             <a class="aa1" href="http://wa.me/5512996165593?text='Olá gostaria de saber melhor sobre as soluções que vocês da Oliveira-Stack oferecem" target="_blank">
+              Obter um SaaS personalizado.
+            </a>
+
+            <br><br><br><br><br><br><br>
+          </p>
+          
+          <!--<a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>-->
+        </div>
+      </div>
+
+      <div class="card shadowbox1 card-glass-tech" style="width: 18rem; z-index: 10;">
+        <div class="card-body">
+          <h5 class="card-title">Desenvolvimento Sob Medida</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Diferente de soluções genéricas, nossos softwares são construídos com foco em performance e estabilidade.</h6>
+          <p class="card-text">
+             Utilizamos tecnologias modernas (como Go e Node.js) para criar ferramentas que 
+          
+          <a class="aa1" href="http://wa.me/5512996165593?text='Olá gostaria de saber melhor sobre as soluções que vocês da Oliveira-Stack oferecem" target="_blank">
+            realmente resolvem
+            gargalos do seu dia a dia.
+          </a>
+            Seja automatizando um processo ou criando uma área restrita, cada linha
+            de código é pensada para se moldar exatamente à necessidade do seu negócio, com o suporte direto 
+            de quem entende do projeto.
+        </p>
+          <!--<a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>-->
+        </div>
+      </div>
+
+    </div>
+
+   </section>
+
+
+    <section class="py-5 sectioncolor2 heigth1">
+
+        <div class="container ">
+            <div class="row"> 
+               <div class="col-md-6"> 
+                   <h2></h2>
+                   <p>
+                    
+                    <br> <br>
+
+                   
+                   </p>
+               </div>
+           <div class="col-md-6"></div>
+           </div>
+       </div>
+    </section>
+    
+
+
+     <section class="py-5 sectioncolor1">
+        <div class="container">
+            <div class="row"> 
+               <div class="col-md-6"> 
+                   <h2>Vamos construir o próximo capítulo do seu negócio?</h2>
+                   <p>
+                    Tecnologia de elite, com atendimento artesanal.
+                    <br> <br>
+
+                    Na Oliveira-Stack, acreditamos que grandes soluções não precisam ser complexas para quem as utiliza. Nosso compromisso é traduzir o poder do código em facilidade para o seu dia a dia.
+
+                    Se você busca um parceiro que olhe para o seu negócio com atenção aos detalhes e entregue ferramentas prontas para o mundo real, você está no lugar certo. Vamos tirar sua ideia do papel e construir algo sólido, juntos.
+
+                   </p>
+
+                   <a class="aa1" href="http://wa.me/5512996165593?text='Olá gostaria de saber melhor sobre as soluções que vocês da Oliveira-Stack oferecem" target="_blank">
+                    Vamos construir juntos?
+                  </a>
+
+               </div>
+           <div class="col-md-6"></div>
+           </div>
+       </div>
+    </section>
+
+
+    <footer class="bg-dark text-white py-5 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          
+          <div class="col-lg-4 col-md-12">
+            <img src="/oliveira.png" alt="Oliveira-Stack" class="mb-3" style="height: 40px;  filter: invert(100%) brightness(200%); ">
+            <p class="text-secondary">
+              Transformando ideias em código e negócios em tecnologia de alta performance. 
+              Especialistas em soluções nativas e escaláveis.
+            </p>
+            <small class="d-block text-secondary mt-4">Since 2025</small>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 text-lg-center">
+            <h5 class="mb-3">Conecte-se</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="https://wa.me/5512996165593" target="_blank" class="text-decoration-none text-secondary hover-white">WhatsApp</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary hover-white">Instagram</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-secondary hover-white">YouTube</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="col-lg-4 col-md-6 text-lg-end">
+            <h5 class="mb-3">Oliveira-Stack</h5>
+            <p class="text-secondary mb-1">Victor de Oliveira</p>
+            <p class="text-secondary mb-1">Consultoria em TI</p>
+
+            <p class="text-secondary small">São José dos Campos, SP</p> <p class="text-secondary small">Natal, RN</p>
+            <!--
+            <p class="text-secondary small">CNPJ: 00.000.000/0001-00</p> <p class="text-secondary small">Natal, RN</p>
+              -->
+          </div>
+    
+        </div>
+    
+        <hr class="my-4 border-secondary">
+    
+        <div class="row">
+          <div class="col text-center">
+            <p class="small text-secondary mb-0">
+              &copy; 2026 Oliveira-Stack. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <style>
+      /* Um toque de estilo para os links */
+      .hover-white:hover {
+        color: white !important;
+        transition: 0.3s;
+      }
+    </style>
+
+   
+
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 100, // Quantidade de pontos
+            "density": { "enable": true, "value_area": 800 }
+          },
+          "color": { "value": "#ffffff" }, // Cor dos pontos
+          "shape": { "type": "circle" },
+          "opacity": {
+            "value": 0.2, // Pontos bem suaves
+            "random": false
+          },
+          "size": {
+            "value": 3,
+            "random": true
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff", //#ff0000 //#ffffff
+            "opacity": 0.1, // Linhas da malha bem discretas
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 2, // Movimento calmo
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab" // As linhas "seguem" o mouse quando você passa por cima
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            }
+          },
+          "modes": {
+            "grab": { "distance": 140, "line_linked": { "opacity": 0.4 } }
+          }
+        },
+        "retina_detect": true
+      });
+    </script>
+
+<script>
+  particlesJS("particles2-js", {
+    "particles": {
+      "number": {
+        "value": 100, // Quantidade de pontos
+        "density": { "enable": true, "value_area": 800 }
+      },
+      "color": { "value": "#ffffff" }, // Cor dos pontos
+      "shape": { "type": "circle" },
+      "opacity": {
+        "value": 0.2, // Pontos bem suaves
+        "random": false
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff", //#ff0000 //#ffffff
+        "opacity": 0.1, // Linhas da malha bem discretas
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2, // Movimento calmo
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab" // As linhas "seguem" o mouse quando você passa por cima
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        }
+      },
+      "modes": {
+        "grab": { "distance": 140, "line_linked": { "opacity": 0.4 } }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+<script type="module">
+  import createGlobe from 'https://cdn.skypack.dev/cobe'
+
+  let phi = 0
+  const canvas = document.getElementById("cobe")
+
+  // Função para ajustar o tamanho do canvas automaticamente
+  const size = canvas.parentElement.offsetWidth;
+
+  const globe = createGlobe(canvas, {
+    devicePixelRatio: 2,
+    width: size * 2,
+    height: size * 2,
+    phi: 0,
+    theta: 0,
+    dark: 0, // 0 tira o fundo preto e deixa ele "vazado"
+    diffuse: 1.2,
+    mapSamples: 16000,
+    mapBrightness: 6,
+    baseColor: [1, 1, 1],      // Cor das linhas (Branco)
+    markerColor: [1, 0.2, 0.2], // Pontos das cidades (Vermelho)
+    glowColor: [1, 1, 1],      // Brilho em volta (Branco)
+    markers: [
+      { location: [-5.85, -35.33], size: 0.1 },  // Macaíba/RN
+      { location: [-23.55, -46.63], size: 0.05 } // São Paulo
+    ],
+    onRender: (state) => {
+      state.phi = phi
+      phi += 0.005 // Velocidade da rotação
+    }
+  })
+</script>
+
+<!--
+
+<script type="module">
+  import createGlobe from 'https://cdn.skypack.dev/cobe'
+
+  let phi = 0
+  const canvas = document.getElementById("cobe")
+
+  const globe = createGlobe(canvas, {
+    devicePixelRatio: 2,
+    width: 600 * 2,
+    height: 600 * 2,
+    phi: 0,
+    theta: 0,
+    dark: 1, // 1 para modo escuro (combina com suas seções escuras)
+    diffuse: 1.2,
+    mapSamples: 16000,
+    mapBrightness: 6,
+    baseColor: [0.3, 0.3, 0.3], // Cor do globo (RGB entre 0 e 1)
+    markerColor: [1, 0.2, 0.2], // Cor dos pontos (usei um tom avermelhado pra você testar)
+    glowColor: [1, 1, 1],
+    markers: [
+      // Aqui você coloca pontos específicos [lat, lng]
+      { location: [-5.85, -35.33], size: 0.05 }, // Exemplo: Rio Grande do Norte
+      { location: [-23.55, -46.63], size: 0.05 }, // São Paulo
+    ],
+    onRender: (state) => {
+      // Isso faz o globo girar sozinho
+      state.phi = phi
+      phi += 0.005
+    }
+  })
+</script>
+-->
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

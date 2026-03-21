@@ -309,6 +309,49 @@ h1 {
 }
 
 
+.blogcard{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 25rem;
+    height: 10rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+    border: rgba(95, 95, 95, 0.426) solid 1px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: center;*/
+    font-weight: 400;
+    overflow: scroll;
+}
+
+.blogcardpa {
+    margin-top: 8px;
+    margin-left: 13px;
+    text-decoration: none;
+}
+
+.blogcard:hover{
+    background: rgb(246, 255, 253);
+}
+
+.blogcard img {
+
+    width: 13rem;
+    height: 8rem;
+    
+    margin: 0 auto;
+    
+    border-radius: 5px;
+    margin-top: 3px;
+    
+}
+
+
+
 
 }
 
@@ -739,6 +782,59 @@ h1 {
     width: 80%;
 }
 
+.blogcard{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 18rem;
+    height: 18rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+    border: rgba(95, 95, 95, 0.426) solid 1px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    font-weight: 400;
+    
+}
+
+.blogcardpa {
+    margin-top: 8px;
+    margin-left: 13px;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    text-decoration: 0;
+}
+
+.blogcardpa::-webkit-scrollbar {
+    display: none;
+}
+
+.blogcard:hover{
+    background: rgb(246, 255, 253);
+}
+
+.blogcard img {
+
+    width: 13rem;
+    height: 8rem;
+   
+    margin: 0 auto;
+    
+    border-radius: 5px;
+    margin-top: 3px;
+    
+}
+
+
+.height2-22{
+    height: 30rem;
+}
+
 
 }
 /**/
@@ -1145,7 +1241,62 @@ h1 {
     width: 60%;
 }
 
+.blogcard{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 18rem;
+    height: 18rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+    border: rgba(95, 95, 95, 0.426) solid 1px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    font-weight: 400;
+    
+}
+
+.blogcardpa {
+    margin-top: 8px;
+    margin-left: 13px;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    text-decoration: 0;
+}
+
+.blogcardpa::-webkit-scrollbar {
+    display: none;
+}
+
+.blogcard:hover{
+    background: rgb(246, 255, 253);
+}
+
+.blogcard img {
+
+    width: 13rem;
+    height: 8rem;
+   
+    margin: 0 auto;
+    
+    border-radius: 5px;
+    margin-top: 3px;
+    
+}
+
+
+.height2-22{
+    height: 30rem;
+}
+
 /**/
+
+
 
 }
 
@@ -1178,8 +1329,6 @@ h1 {
     
    
 }
-
-
 
 .sectioncolor1-1{
     background: linear-gradient(135deg,  #e4f5fd 10%, #F8F9FA 50%, #dbf1fb 100% );
@@ -1385,7 +1534,7 @@ footer{
 h1 {
     /* Peso extra para o título ganhar autoridade */
     font-weight: 800; 
-    
+    color: white !important;
     /* O Segredo do Gradiente */
     background: linear-gradient(135deg, #111111 0%, #434343 100%);
     -webkit-background-clip: text; /* Faz o fundo ficar "dentro" do texto */
@@ -1395,6 +1544,10 @@ h1 {
     letter-spacing: -0.02em; 
     line-height: 1.1;
     margin-bottom: 1.5rem;
+}
+
+.h2-22{
+    color: white !important;
 }
 
 .hcolor{
@@ -1506,6 +1659,101 @@ h1 {
 
 .card-glass-tech p {
     color: #434343 !important; /* Texto de apoio em cinza chumbo */
+}
+
+
+.imgoliv{
+    width: 10rem;
+    height: 10rem;
+}
+
+.fotofounder{
+    width: 7rem;
+    height: 10rem;
+    margin: 0 auto;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+.psobre1{
+    margin: 0 auto;
+    margin-left: 5px;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+.psobre2{
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-bottom: 1em;
+    font-weight: 400;
+    
+}
+
+.divmor-2{
+    width: 60%;
+}
+
+
+
+.blogcard{
+    width: 20em;
+    height: 35em;
+    background: white;
+    
+}
+
+.blogcard{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 18rem;
+    height: 18rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+    border: rgba(95, 95, 95, 0.426) solid 1px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    font-weight: 400;
+    
+}
+
+.blogcardpa {
+    margin-top: 8px;
+    margin-left: 13px;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    text-decoration: 0;
+}
+
+.blogcardpa::-webkit-scrollbar {
+    display: none;
+}
+
+.blogcard:hover{
+    background: rgb(246, 255, 253);
+}
+
+.blogcard img {
+
+    width: 13rem;
+    height: 8rem;
+   
+    margin: 0 auto;
+    
+    border-radius: 5px;
+    margin-top: 3px;
+    
+}
+
+
+.height2-22{
+    height: 30rem;
 }
 
 /**/
