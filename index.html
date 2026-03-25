@@ -88,11 +88,42 @@
     <!--nav bar-->
 
 
+    <section class="hero-video">
+
+      <div class="video-overlay"></div>
+       <video autoplay muted loop playsinline class="bg-video">
+         <source src="/globo.webm" type="video/webm">
+          <source src="/3129957-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+  
+      <div class="container hero-content">
+          <h1 class="h1-2">Hoje a tecnologia é a sua maior aliada!</h1>
+          <p class="lead p1-2">Com tecnologias criadas diretamente sob demanda para sua empresa buscamos trazer resultados e mais tempo
+            livre para seu time se empenhar em tarefas mais estrategicas.
+          </p>
+
+          <div title="Falar com Victor Oliveira" class="d-flex flex-wrap gap-3 align-items-center mt-4 wrapper-btn-premium">
+            <a class="btn-oliveira-premium" href="http://wa.me/5512996165593?text='Olá gostaria de ter a tecnologia como minha aliada, podemos ver um orçamento?" target="_blank">
+                Solicitar Consultoria <span class="ms-2">→</span>
+            </a>
+            <!--
+            <a href="#projetos" class="text-decoration-none fw-bold text-secondary link-discreto">
+                Ver projetos
+            </a>-->
+        </div>
+      </div>
+  </section>
+
+
+<!--
     <section class="py-5 sectioncolor1-1 " style="display: flex;">
 
       <br><br><br><br>
+        
+        <!--particles.js
+       <div id="particles3-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></div>
+        <!--particles.js
       
-
      <div id="primeirotexto" class="container">
          <div class="row"> 
             <div class="col-md-10"> 
@@ -113,19 +144,21 @@
               <!--
               <a href="#projetos" class="text-decoration-none fw-bold text-secondary link-discreto">
                   Ver projetos
-              </a>-->
+              </a>
           </div>
             
         <div class="col-md-6"></div>
         </div>
-    </div>
+     </div>
 
-    <!--Globo-->
-    <div class="div-do-globo corglobo div-do-globo" style="width: 100%; max-width: 600px; aspect-ratio: 1; margin: 0 auto;">
+    <!--Globo
+    <!--<div class="div-do-globo corglobo div-do-globo" style="width: 100%; max-width: 600px; aspect-ratio: 1; margin: 0 auto;">
       <canvas id="cobe" style="width: 100%; height: 100%;" alt="Visualização global de conexões tecnológicas e sistemas escaláveis"></canvas>
     </div>
+  
     </section>
 
+  -->
     <div style="height: 1px; background: rgba(0, 0, 0, 0.492);">
       
     </div>
@@ -136,7 +169,7 @@
       <br><br><br><br>
 
       <!--particles.js-->
-      <div id="particles-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></div>
+      <div id="particles2-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></div>
       <!--particles.js-->
 
 
@@ -253,7 +286,7 @@
     
 
       <!--particles.js-->
-      <div id="particles2-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></div>
+      <div id="particles-js" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></div>
       <!--particles.js-->
 
 
@@ -594,6 +627,74 @@
   });
 </script>
 
+<script>
+  particlesJS("particles3-js", {
+    
+  "particles": {
+    "number": {
+      "value": 60,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "shape": {
+      "type": "polygon",
+      "polygon": { "nb_sides": 6 } // Aqui definimos o Hexágono
+    },
+    "color": { "value": "#2c3e50" }, // Azul acinzentado profissional
+    "opacity": {
+      "value": 0.3,
+      "random": true
+    },
+    "size": {
+      "value": 10, // Tamanho dos hexágonos
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 120,
+      "color": "#2c3e50",
+      "opacity": 0.4,
+      "width": 1.5
+    },
+    "move": {
+      "enable": true,
+      "speed": 1.5,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble" // Efeito de "inflar" ao passar o mouse
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      }
+    },
+    "modes": {
+      "bubble": {
+        "distance": 200,
+        "size": 15,
+        "duration": 2,
+        "opacity": 0.8,
+        "speed": 3
+      }
+    }
+  },
+  "retina_detect": true
+}
+  );
+</script>
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+<!--
 <script type="module">
   import createGlobe from 'https://cdn.skypack.dev/cobe'
 
@@ -626,6 +727,9 @@
     }
   })
 </script>
+-->
+
+
 
 <!--
 

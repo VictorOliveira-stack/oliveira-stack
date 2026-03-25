@@ -19,6 +19,69 @@ body{
     text-decoration: underline;
 }
 
+
+.hero-video {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* Ocupa 80% da altura da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white; /* Texto branco sobre o vídeo escuro dá muita autoridade */
+   
+}
+
+@media(min-width: 1366px) and (max-width: 2560px){
+    .hero-video {
+        position: relative;
+        width: 100%;
+        min-height: 50vh; /* Ocupa 80% da altura da tela */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        color: white; /* Texto branco sobre o vídeo escuro dá muita autoridade */
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    /* Se o vídeo for muito claro, use o filtro abaixo para dar o ar "Cyber" */
+    filter: brightness(0.4) contrast(1.2); 
+}
+
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Escurece o vídeo para o texto saltar */
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+
+
+
 /*.ubuntu-light {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
@@ -314,22 +377,20 @@ footer{
     font-weight: 600;
     color: rgb(38, 38, 38);
 }*/
-h1 {
-    /* Peso extra para o título ganhar autoridade */
-    font-weight: 600; 
 
-    font-size: 28px;
-    width: 180%;
-    
-    /* O Segredo do Gradiente */
-    background: linear-gradient(135deg, #111111 0%, #434343 100%);
-    -webkit-background-clip: text; /* Faz o fundo ficar "dentro" do texto */
-    -webkit-text-fill-color: transparent; /* Deixa o texto transparente para o fundo brilhar */
-    
-    /* Ajuste de espaçamento para um look mais tech */
-    letter-spacing: -0.02em; 
-    line-height: 1.1;
+.h1-2{
+    font-weight: 800; 
+    width: 100%;
     margin-bottom: 1.5rem;
+    color: white;
+    display: flex;
+}
+
+.p1-2{
+    color: rgba(255, 255, 255, 0.909);
+    font-weight: 800;
+    font-size: 20px;
+    width: 100%;
 }
 
 .hcolor{
@@ -348,8 +409,8 @@ h1 {
 
 /* Botão Principal Estilo Stripe/Apple */
 .btn-oliveira-premium {
-    background: #1d1d1f; /* Preto profundo elegante */
-    color: #ffffff !important;
+    background-color: #2ecc71;
+    color: #fff;
     padding: 12px 32px;
     border-radius: 50px; /* Estilo pílula */
     font-weight: 600;
@@ -365,9 +426,9 @@ h1 {
     font-size: 0.9rem !important;
     
     /* Garante que o botão não fique colado nas bordas se o texto for longo */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 5rem;
+
+    
 }
 
 .btn-oliveira-premium:hover {
@@ -726,20 +787,19 @@ footer{
     font-weight: 600;
     color: rgb(38, 38, 38);
 }*/
-h1 {
-    /* Peso extra para o título ganhar autoridade */
+.h1-2{
     font-weight: 800; 
-    /*width: 260%;*/
-    
-    /* O Segredo do Gradiente */
-    background: linear-gradient(135deg, #111111 0%, #434343 100%);
-    -webkit-background-clip: text; /* Faz o fundo ficar "dentro" do texto */
-    -webkit-text-fill-color: transparent; /* Deixa o texto transparente para o fundo brilhar */
-    
-    /* Ajuste de espaçamento para um look mais tech */
-    letter-spacing: -0.02em; 
-    line-height: 1.1;
+    width: 100%;
     margin-bottom: 1.5rem;
+    color: white;
+    display: flex;
+}
+
+.p1-2{
+    color: rgba(255, 255, 255, 0.909);
+    font-weight: 800;
+    font-size: 20px;
+    width: 40%;
 }
 
 .hcolor{
@@ -758,8 +818,8 @@ h1 {
 
 /* Botão Principal Estilo Stripe/Apple */
 .btn-oliveira-premium {
-    background: #1d1d1f; /* Preto profundo elegante */
-    color: #ffffff !important;
+    background-color: #2ecc71;
+    color: #fff;
     padding: 12px 32px;
     border-radius: 50px; /* Estilo pílula */
     font-weight: 600;
@@ -778,6 +838,59 @@ h1 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1023px){
+    .btn-oliveira-premium {
+        background-color: #2ecc71;
+        color: #fff;
+        padding: 12px 32px;
+        border-radius: 50px; /* Estilo pílula */
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid #1d1d1f;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Diminui o respiro interno: 10px em cima/baixo e 24px nas laterais */
+        padding: 10px 24px !important; 
+            
+        /* Diminui um pouco o tamanho da fonte */
+        font-size: 0.9rem !important;
+        
+        /* Garante que o botão não fique colado nas bordas se o texto for longo */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .btn-oliveira-premium {
+        background-color: #2ecc71;
+        color: #fff;
+        padding: 12px 32px;
+        border-radius: 50px; /* Estilo pílula */
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid #1d1d1f;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        /* Diminui o respiro interno: 10px em cima/baixo e 24px nas laterais */
+        padding: 10px 24px !important; 
+            
+        /* Diminui um pouco o tamanho da fonte */
+        font-size: 0.9rem !important;
+        
+        /* Garante que o botão não fique colado nas bordas se o texto for longo */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+    }
 }
 
 .btn-oliveira-premium:hover {
@@ -1111,19 +1224,35 @@ footer{
     font-weight: 600;
     color: rgb(38, 38, 38);
 }*/
-h1 {
-    /* Peso extra para o título ganhar autoridade */
+/*h1 {
+    /* Peso extra para o título ganhar autoridade 
     font-weight: 800; 
-    width: 160%;
-    /* O Segredo do Gradiente */
+    width: 100%;
+    /* O Segredo do Gradiente 
     background: linear-gradient(135deg, #111111 0%, #434343 100%);
-    -webkit-background-clip: text; /* Faz o fundo ficar "dentro" do texto */
-    -webkit-text-fill-color: transparent; /* Deixa o texto transparente para o fundo brilhar */
+    -webkit-background-clip: text; /* Faz o fundo ficar "dentro" do texto 
+    -webkit-text-fill-color: transparent; /* Deixa o texto transparente para o fundo brilhar 
     
-    /* Ajuste de espaçamento para um look mais tech */
+    /* Ajuste de espaçamento para um look mais tech 
     letter-spacing: -0.02em; 
     line-height: 1.1;
     margin-bottom: 1.5rem;
+    
+}*/
+
+.h1-2{
+    font-weight: 800; 
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: white;
+    display: flex;
+}
+
+.p1-2{
+    color: rgba(255, 255, 255, 0.909);
+    font-weight: 800;
+    font-size: 20px;
+    width: 40%;
 }
 
 .hcolor{
@@ -1142,8 +1271,8 @@ h1 {
 
 /* Botão Principal Estilo Stripe/Apple */
 .btn-oliveira-premium {
-    background: #1d1d1f; /* Preto profundo elegante */
-    color: #ffffff !important;
+    background-color: #2ecc71;
+    color: #fff;
     padding: 12px 32px;
     border-radius: 50px; /* Estilo pílula */
     font-weight: 600;
@@ -1152,6 +1281,7 @@ h1 {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #1d1d1f;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 6rem;
 }
 
 .btn-oliveira-premium:hover {
@@ -1160,6 +1290,14 @@ h1 {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.5px; /* Sutil expansão */
 }
+
+/*.wrapper-btn-premium {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px;        
+    padding-bottom: 20px;
+}*/
 
 /* Link Secundário ao lado */
 .link-discreto {
@@ -1472,19 +1610,20 @@ footer{
     font-weight: 600;
     color: rgb(38, 38, 38);
 }*/
-h1 {
-    /* Peso extra para o título ganhar autoridade */
+
+.h1-2{
     font-weight: 800; 
-    
-    /* O Segredo do Gradiente */
-    background: linear-gradient(135deg, #111111 0%, #434343 100%);
-    -webkit-background-clip: text; /* Faz o fundo ficar "dentro" do texto */
-    -webkit-text-fill-color: transparent; /* Deixa o texto transparente para o fundo brilhar */
-    
-    /* Ajuste de espaçamento para um look mais tech */
-    letter-spacing: -0.02em; 
-    line-height: 1.1;
+    width: 100%;
     margin-bottom: 1.5rem;
+    color: white;
+    display: flex;
+}
+
+.p1-2{
+    color: rgba(255, 255, 255, 0.909);
+    font-weight: 800;
+    font-size: 20px;
+    width: 40%;
 }
 
 .hcolor{
@@ -1503,8 +1642,8 @@ h1 {
 
 /* Botão Principal Estilo Stripe/Apple */
 .btn-oliveira-premium {
-    background: #1d1d1f; /* Preto profundo elegante */
-    color: #ffffff !important;
+    background-color: #2ecc71;
+    color: #fff;
     padding: 12px 32px;
     border-radius: 50px; /* Estilo pílula */
     font-weight: 600;
@@ -1513,6 +1652,7 @@ h1 {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid #1d1d1f;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 8rem;
 }
 
 .btn-oliveira-premium:hover {
